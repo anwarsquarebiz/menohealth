@@ -1,6 +1,17 @@
 import AppLayout from '@/layouts/app-layout';
+import SiteLayout from '@/layouts/site-layout';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { type BreadcrumbItem } from '@/types';
 import { Head } from '@inertiajs/react';
+import { useEffect, useRef } from 'react';
+import HeroSection from '@/components/aftab-components/Resources/HeroSection';
+import ServicesSection from '@/components/aftab-components/Resources/ServicesSection';
+import ResourcesSection from '@/components/aftab-components/Resources/ResourcesSection';
+import FAQSection from '@/components/aftab-components/Resources/FAQSection';
+import MenopauseTrackerSection from '@/components/aftab-components/Resources/MenopauseTrackerSection';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
@@ -10,79 +21,30 @@ const breadcrumbs: BreadcrumbItem[] = [
 ];
 
 export default function Resources() {
-    const resourceCategories = [
-        {
-            title: 'Symptom Management',
-            description: 'Learn about managing common menopause symptoms',
-            items: [
-                'Hot Flashes & Night Sweats',
-                'Sleep Disturbances',
-                'Mood Changes',
-                'Bone Health',
-            ],
-        },
-        {
-            title: 'Hormone Therapy',
-            description: 'Information about hormone replacement therapy options',
-            items: [
-                'HRT Overview',
-                'Benefits & Risks',
-                'Alternative Treatments',
-                'Consultation Guide',
-            ],
-        },
-        {
-            title: 'Lifestyle & Wellness',
-            description: 'Tips for maintaining health and wellness',
-            items: [
-                'Nutrition & Diet',
-                'Exercise & Fitness',
-                'Stress Management',
-                'Mental Health Support',
-            ],
-        },
-    ];
+
+    const mainRef = useRef<useRefHTMLDivElement>(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      
+      ScrollTrigger.refresh();
+    }, mainRef);
+
+    return () => ctx.revert();
+  }, []);
 
     return (
-        <AppLayout breadcrumbs={breadcrumbs}>
+        <SiteLayout breadcrumbs={breadcrumbs}>
             <Head title="Resources" />
-            <div className="flex h-full flex-1 flex-col gap-6 overflow-x-auto rounded-xl p-6">
-                <div className="space-y-4">
-                    <h1 className="text-4xl font-bold text-foreground">
-                        Health Resources
-                    </h1>
-                    <p className="text-lg text-muted-foreground">
-                        Explore our comprehensive collection of resources to support your
-                        menopause journey.
-                    </p>
-                </div>
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    {resourceCategories.map((category, index) => (
-                        <div
-                            key={index}
-                            className="rounded-lg border border-sidebar-border/70 bg-card p-6 shadow-sm dark:border-sidebar-border"
-                        >
-                            <h2 className="mb-2 text-xl font-semibold">
-                                {category.title}
-                            </h2>
-                            <p className="mb-4 text-sm text-muted-foreground">
-                                {category.description}
-                            </p>
-                            <ul className="space-y-2">
-                                {category.items.map((item, itemIndex) => (
-                                    <li
-                                        key={itemIndex}
-                                        className="text-sm text-muted-foreground"
-                                    >
-                                        • {item}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </AppLayout>
+            <main ref={mainRef} className="w-full overflow-hidden bg-white">
+                <HeroSection />
+                <ServicesSection />
+                <ResourcesSection />
+                <FAQSection />
+                <MenopauseTrackerSection/>
+    </main>
+    
+        </SiteLayout>
     );
 }
 
