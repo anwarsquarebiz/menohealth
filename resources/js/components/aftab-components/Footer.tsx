@@ -11,15 +11,20 @@ const socialLinks = [
 
 const footerLinks = {
   Articles: [
-    { name: "BBC", path: "https://www.bbc.com" },
-    { name: "YouTube", path: "https://www.youtube.com" },
-    { name: "Apple Podcast", path: "https://podcasts.apple.com" },
-    { name: "Instagram", path: "https://www.instagram.com" },
+    { name: "BBC", path: "https://www.bbc.co.uk/news/articles/c4gpkenx9dzo" },
+    { name: "YouTube", path: "https://www.youtube.com/watch?v=eParptE0Zgs" },
+    {
+      name: "Apple Podcast",
+      path:
+        "https://podcasts.apple.com/gb/podcast/dr-streichers-inside-information-menopause-midlife/id1615785832",
+    },
+    { name: "Instagram", path: "https://www.instagram.com/drmaryclaire/" },
   ],
   Sitemap: [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Resources", path: "/resources" },
+    { name: "Contact", path: "/contact" },
   ],
 };
 

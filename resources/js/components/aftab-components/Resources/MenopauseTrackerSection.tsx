@@ -150,6 +150,7 @@ export default function MenopauseTrackerSection() {
           <Input
             label="Name"
             value={personalInfo.name}
+            placeholder="eg: Jhon Doe"
             onChange={(v) => setPersonalInfo({ ...personalInfo, name: v })}
           />
           <Input
@@ -162,6 +163,7 @@ export default function MenopauseTrackerSection() {
             label="Age"
             type="number"
             value={personalInfo.age}
+            placeholder="eg: 21"
             onChange={(v) => setPersonalInfo({ ...personalInfo, age: v })}
           />
 
@@ -309,7 +311,7 @@ const Select = ({ label, options, value, onChange }: any) => (
     <select
       value={value}
       onChange={(e) => onChange(e.target.value)}
-      className="mt-1 w-full rounded-xl border border-black/10 px-4 py-2 text-sm"
+      className="mt-1 w-full rounded-xl text-black/85 border border-black/10 px-4 py-2 text-sm"
     >
       <option value="">Select</option>
       {options.map((o: string) => (

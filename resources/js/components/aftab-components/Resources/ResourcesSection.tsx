@@ -2,39 +2,50 @@ import React, { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Heart } from "lucide-react";
+import CustomBtn from "../CustomBtn";
+import { router } from "@inertiajs/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const resources = [
   {
     title: "Books for Mid-Awareness",
-    subtitle: "What Fresh Hell Is This?",
-    type: "Article",
-    platform: "Book",
+    subtitle: "Brain Fog and Menopause: What's Really Happening",
+    type: "BBC News",
+    platform: "Article",
+    redirect: "https://www.bbc.co.uk/news/articles/c4gpkenx9dzo",
   },
   {
     title: "Why Menopause Warnings Were Removed",
     subtitle: "Why Menopause Warnings Were Removed — And Why It Matters",
     type: "Youtube",
     platform: "Video",
+    redirect: "https://www.youtube.com/watch?v=eParptE0Zgs",
   },
   {
     title: "Menopause, Midlife, and More",
     subtitle: "Menopause, Midlife, and More",
     type: "Apple Podcasts",
     platform: "Podcast",
+    redirect:
+      "https://podcasts.apple.com/gb/podcast/dr-streichers-inside-information-menopause-midlife/id1615785832",
   },
   {
     title: "Dr Mary Claire Haver",
     subtitle: "Dr Mary Claire Haver",
     type: "Instagram",
     platform: "Video",
+    redirect: "https://www.instagram.com/drmaryclaire/",
   },
 ];
 
 export default function ResourcesSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const cardsRef = useRef<HTMLDivElement>(null);
+
+  const handleArticleClick = (link: string) => {
+    window.open(link, "_blank", "noopener,noreferrer");
+  };
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -103,10 +114,16 @@ export default function ResourcesSection() {
                   </div>
                 </div>
 
-                <button className="mt-6 bg-[#c7a486] hover:bg-[#b89476] transition-colors text-white px-5 py-2.5 rounded-full flex items-center gap-4 w-fit">
+                {/* <button className="mt-6 bg-[#c7a486] hover:bg-[#b89476] transition-colors text-white px-5 py-2.5 rounded-full flex items-center gap-4 w-fit">
                   <span className="text-xs">View Now</span>
                   <span className="w-1.5 h-1.5 bg-white rounded-full" />
-                </button>
+                </button> */}
+                <div className="w-fit mt-6">
+                  <CustomBtn
+                    label="View Now"
+                    onClick={() => handleArticleClick(resource.redirect)}
+                  />
+                </div>
               </div>
             ))}
           </div>
@@ -126,10 +143,12 @@ export default function ResourcesSection() {
                 </div>
               </div>
 
-              <button className="mt-6 bg-[#c7a486] hover:bg-[#b89476] transition-colors text-white px-5 py-2.5 rounded-full flex items-center gap-4 w-fit">
-                <span className="text-xs">View Now</span>
-                <span className="w-1.5 h-1.5 bg-white rounded-full" />
-              </button>
+              <div className="w-fit mt-6">
+                <CustomBtn
+                  label="View Now"
+                  onClick={() => handleArticleClick(resources[3].redirect)}
+                />
+              </div>
             </div>
           </div>
         </div>

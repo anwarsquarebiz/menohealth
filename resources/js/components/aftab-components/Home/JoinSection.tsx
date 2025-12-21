@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Heart } from "lucide-react";
 import CustomBtn from "../CustomBtn";
+import { router } from "@inertiajs/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,6 +27,10 @@ export default function JoinSection() {
 
     return () => ctx.revert();
   }, []);
+
+  const handleConnectClick = () => {
+    router.visit("/contact");
+  };
 
   return (
     <section ref={sectionRef} className="w-full bg-white py-16">
@@ -53,7 +58,7 @@ export default function JoinSection() {
 
         {/* CTA */}
         <div className="join-animate pt-2">
-          <CustomBtn />
+          <CustomBtn label="Connect Now" onClick={handleConnectClick} />
         </div>
       </div>
     </section>
