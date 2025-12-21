@@ -1,6 +1,16 @@
 import AppLayout from '@/layouts/app-layout';
+import SiteLayout from '@/layouts/site-layout';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { type BreadcrumbItem } from '@/types';
 import { Head } from '@inertiajs/react';
+import { useEffect, useRef } from 'react';
+import HeroSection from '@/components/aftab-components/About/HeroSection';
+import WhyWeExistSection from '@/components/aftab-components/About/WhyWeExistSection';
+import OurTeamSection from '@/components/aftab-components/About/OurTeamSection';
+import ValuesSection from '@/components/aftab-components/About/ValuesSection';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
@@ -10,42 +20,29 @@ const breadcrumbs: BreadcrumbItem[] = [
 ];
 
 export default function About() {
+
+    const mainRef = useRef<useRefHTMLDivElement>(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      
+      ScrollTrigger.refresh();
+    }, mainRef);
+
+    return () => ctx.revert();
+  }, []);
+
     return (
-        <AppLayout breadcrumbs={breadcrumbs}>
+        <SiteLayout breadcrumbs={breadcrumbs}>
             <Head title="About" />
-            <div className="flex h-full flex-1 flex-col gap-6 overflow-x-auto rounded-xl p-6">
-                <div className="space-y-6">
-                    <div>
-                        <h1 className="mb-4 text-4xl font-bold text-foreground">
-                            About MenoHealth
-                        </h1>
-                        <p className="text-lg leading-relaxed text-muted-foreground">
-                            MenoHealth is dedicated to providing comprehensive support and
-                            resources for women navigating menopause. Our mission is to empower
-                            you with knowledge, tools, and community support throughout your
-                            health journey.
-                        </p>
-                    </div>
-                    <div className="space-y-4">
-                        <h2 className="text-2xl font-semibold">Our Mission</h2>
-                        <p className="text-muted-foreground">
-                            To provide evidence-based information, personalized health tracking,
-                            and a supportive community for women experiencing menopause and
-                            perimenopause.
-                        </p>
-                    </div>
-                    <div className="space-y-4">
-                        <h2 className="text-2xl font-semibold">What We Offer</h2>
-                        <ul className="list-disc space-y-2 pl-6 text-muted-foreground">
-                            <li>Comprehensive health tracking and symptom monitoring</li>
-                            <li>Evidence-based articles and resources</li>
-                            <li>Expert guidance and support</li>
-                            <li>Community forums and peer support</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </AppLayout>
+            <main ref={mainRef} className="w-full overflow-hidden bg-white">
+                <HeroSection />
+                <WhyWeExistSection />
+                <OurTeamSection />
+                <ValuesSection/>
+    </main>
+    
+        </SiteLayout>
     );
 }
 

@@ -1,6 +1,22 @@
 import AppLayout from '@/layouts/app-layout';
+import SiteLayout from '@/layouts/site-layout';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { type BreadcrumbItem } from '@/types';
 import { Head } from '@inertiajs/react';
+import { useEffect, useRef } from 'react';
+import HeroSection from '@/components/aftab-components/Home/HeroSection';
+import IntroSection from '@/components/aftab-components/Home/IntroSection';
+import ServicesSection from '@/components/aftab-components/Home/ServicesSection';
+import CommunitySection from '@/components/aftab-components/Home/CommunitySection';
+import MissionSection from '@/components/aftab-components/Home/MissionSection';
+import FeaturesSection from '@/components/aftab-components/Home/FeaturesSection';
+import HowItWorksSection from '@/components/aftab-components/Home/HowItWorksSection';
+import QuoteSection from '@/components/aftab-components/Home/QuoteSection';
+import NewsletterSection from '@/components/aftab-components/NewsletterSection';
+import JoinSection from '@/components/aftab-components/Home/JoinSection';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
@@ -10,40 +26,32 @@ const breadcrumbs: BreadcrumbItem[] = [
 ];
 
 export default function Home() {
+
+    const mainRef = useRef<useRefHTMLDivElement>(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // Global scroll animations can be added here if needed
+      ScrollTrigger.refresh();
+    }, mainRef);
+
+    return () => ctx.revert();
+  }, []);
+
     return (
-        <AppLayout breadcrumbs={breadcrumbs}>
+        <SiteLayout breadcrumbs={breadcrumbs}>
             <Head title="Home" />
-            <div className="flex h-full flex-1 flex-col gap-6 overflow-x-auto rounded-xl p-6">
-                <div className="space-y-4">
-                    <h1 className="text-4xl font-bold text-foreground">
-                        Welcome to MenoHealth
-                    </h1>
-                    <p className="text-lg text-muted-foreground">
-                        Your trusted resource for menopause health and wellness.
-                    </p>
-                </div>
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    <div className="rounded-lg border border-sidebar-border/70 bg-card p-6 shadow-sm dark:border-sidebar-border">
-                        <h2 className="mb-2 text-xl font-semibold">Health Tracking</h2>
-                        <p className="text-muted-foreground">
-                            Monitor your symptoms and track your health journey.
-                        </p>
-                    </div>
-                    <div className="rounded-lg border border-sidebar-border/70 bg-card p-6 shadow-sm dark:border-sidebar-border">
-                        <h2 className="mb-2 text-xl font-semibold">Expert Resources</h2>
-                        <p className="text-muted-foreground">
-                            Access evidence-based information and expert guidance.
-                        </p>
-                    </div>
-                    <div className="rounded-lg border border-sidebar-border/70 bg-card p-6 shadow-sm dark:border-sidebar-border">
-                        <h2 className="mb-2 text-xl font-semibold">Community Support</h2>
-                        <p className="text-muted-foreground">
-                            Connect with others on similar health journeys.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </AppLayout>
+            <main ref={mainRef} className="w-full overflow-hidden bg-white">
+      <HeroSection />
+       <IntroSection />
+      <CommunitySection />
+      <MissionSection />
+      <FeaturesSection />
+      <HowItWorksSection />
+      <QuoteSection />
+      <JoinSection/>
+    </main>
+        </SiteLayout>
     );
 }
 
