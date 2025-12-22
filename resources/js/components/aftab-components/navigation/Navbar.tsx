@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { Menu, X } from "lucide-react";
 import MobileDrawer from "./MobileDrawer";
 import CustomBtn from "../CustomBtn";
+import { router } from "@inertiajs/react";
 
 const nav = [
   {
@@ -44,6 +45,10 @@ export default function Navbar() {
     );
   }, []);
 
+  const handleContactClick = () => {
+    router.visit("/contact");
+  };
+
   return (
     <>
       <header
@@ -79,7 +84,7 @@ export default function Navbar() {
             ))}
 
             <div className="ml-8">
-              <CustomBtn label="Contact Us" />
+              <CustomBtn label="Contact Us" onClick={handleContactClick} />
             </div>
           </nav>
 
