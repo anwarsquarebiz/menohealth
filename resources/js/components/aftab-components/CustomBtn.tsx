@@ -106,7 +106,7 @@ export default function CustomBtn({
       onClick={onClick}
       className="
         relative inline-flex items-center
-        rounded-full bg-[#c7a486]
+        rounded-full bg-[#587974]
         px-6 py-2.5
         overflow-visible
         text-white text-xs uppercase tracking-wider cursor-pointer

@@ -92,7 +92,7 @@ export default function HeroSection() {
         {/* HERO IMAGE (starts visible) */}
         <div ref={heroImageRef} className="absolute inset-0 opacity-100">
           <img
-            src="/assets/home-hero-img.svg"
+            src="/assets/home-hero-img.jpg"
             alt=""
             className="absolute inset-0 w-full h-full object-cover"
           />
