@@ -130,7 +130,7 @@ export default function HeroSection() {
 
             {/* <button
               ref={ctaRef}
-              className="self-start bg-[#c7a486] hover:bg-[#b89476] transition-colors px-6 py-3 rounded-full flex items-center gap-4"
+              className="self-start bg-brand hover:bg-[#b89476] transition-colors px-6 py-3 rounded-full flex items-center gap-4"
             >
               <span className="font-lato text-white text-xs uppercase tracking-wider">
                 Book Now

@@ -83,7 +83,7 @@ export default function MissionSection() {
                 index === 1 ? "lg:pt-24" : ""
               }`}
             >
-              <h3 className="font-lora text-brand text-xl sm:text-2xl leading-snug">
+              <h3 className="font-lora text-black text-xl sm:text-2xl leading-snug">
                 {feature.title}
               </h3>
               <p className="font-lato text-muted-foreground text-sm sm:text-base leading-relaxed">

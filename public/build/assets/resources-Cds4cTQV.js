@@ -1,51 +1,1708 @@
-import{c as k,r as x,j as s,H as ge}from"./app-sbiZZbzh.js";import{g as f,H as ce,S as ae,C as ue,a as be}from"./site-layout-Co0qRaK2.js";import{c as ye}from"./createLucideIcon-0TJadoOv.js";/* empty css            */import"./x-jz9tJxld.js";const we=[["path",{d:"m6 9 6 6 6-6",key:"qrunsl"}]],je=ye("ChevronDown",we);function ve(){const e=k.c(5),t=x.useRef(null),a=x.useRef(null),n=x.useRef(null),r=x.useRef(null);let l,o;e[0]===Symbol.for("react.memo_cache_sentinel")?(l=()=>{const p=f.context(()=>{f.timeline({delay:.3}).from(a.current,{y:50,opacity:0,duration:1,ease:"power3.out"}).from(n.current,{y:30,opacity:0,duration:.8,ease:"power3.out"},"-=0.5").from(r.current,{y:20,opacity:0,duration:.6,ease:"power3.out"},"-=0.4")},t);return()=>p.revert()},o=[],e[0]=l,e[1]=o):(l=e[0],o=e[1]),x.useLayoutEffect(l,o);let i;e[2]===Symbol.for("react.memo_cache_sentinel")?(i=s.jsxs("div",{className:"absolute inset-0 pointer-events-none opacity-5",children:[s.jsx("div",{className:"absolute w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] bg-brand rounded-full -top-40 -right-40 blur-3xl"}),s.jsx("div",{className:"absolute w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] bg-brand rounded-full -bottom-20 -left-20 blur-3xl"})]}),e[2]=i):i=e[2];let c;e[3]===Symbol.for("react.memo_cache_sentinel")?(c=s.jsxs("h1",{ref:a,className:`
+import { c as k, r as x, j as s, H as ge } from "./app-sbiZZbzh.js";
+import {
+  g as f,
+  H as ce,
+  S as ae,
+  C as ue,
+  a as be,
+} from "./site-layout-Co0qRaK2.js";
+import { c as ye } from "./createLucideIcon-0TJadoOv.js";
+/* empty css            */ import "./x-jz9tJxld.js";
+const we = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]],
+  je = ye("ChevronDown", we);
+function ve() {
+  const e = k.c(5),
+    t = x.useRef(null),
+    a = x.useRef(null),
+    n = x.useRef(null),
+    r = x.useRef(null);
+  let l, o;
+  e[0] === Symbol.for("react.memo_cache_sentinel")
+    ? ((l = () => {
+        const p = f.context(() => {
+          f.timeline({ delay: 0.3 })
+            .from(a.current, {
+              y: 50,
+              opacity: 0,
+              duration: 1,
+              ease: "power3.out",
+            })
+            .from(
+              n.current,
+              { y: 30, opacity: 0, duration: 0.8, ease: "power3.out" },
+              "-=0.5"
+            )
+            .from(
+              r.current,
+              { y: 20, opacity: 0, duration: 0.6, ease: "power3.out" },
+              "-=0.4"
+            );
+        }, t);
+        return () => p.revert();
+      }),
+      (o = []),
+      (e[0] = l),
+      (e[1] = o))
+    : ((l = e[0]), (o = e[1])),
+    x.useLayoutEffect(l, o);
+  let i;
+  e[2] === Symbol.for("react.memo_cache_sentinel")
+    ? ((i = s.jsxs("div", {
+        className: "absolute inset-0 pointer-events-none opacity-5",
+        children: [
+          s.jsx("div", {
+            className:
+              "absolute w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] bg-brand rounded-full -top-40 -right-40 blur-3xl",
+          }),
+          s.jsx("div", {
+            className:
+              "absolute w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] bg-brand rounded-full -bottom-20 -left-20 blur-3xl",
+          }),
+        ],
+      })),
+      (e[2] = i))
+    : (i = e[2]);
+  let c;
+  e[3] === Symbol.for("react.memo_cache_sentinel")
+    ? ((c = s.jsxs("h1", {
+        ref: a,
+        className: `
             font-lora font-medium text-black
             text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[76px]
             leading-tight lg:leading-normal
             max-w-[1485px]
-          `,children:["Trusted Resources for Every Stage of"," ",s.jsx("span",{className:"text-brand",children:"Menopause"})]}),e[3]=c):c=e[3];let m;return e[4]===Symbol.for("react.memo_cache_sentinel")?(m=s.jsxs("section",{ref:t,className:`
+          `,
+        children: [
+          "Trusted Resources for Every Stage of",
+          " ",
+          s.jsx("span", { className: "text-brand", children: "Menopause" }),
+        ],
+      })),
+      (e[3] = c))
+    : (c = e[3]);
+  let m;
+  return (
+    e[4] === Symbol.for("react.memo_cache_sentinel")
+      ? ((m = s.jsxs("section", {
+          ref: t,
+          className: `
         relative w-full
         min-h-screen
         flex items-center
         bg-gradient-to-br from-[#faf9f8] to-white
         overflow-hidden
-      `,children:[i,s.jsxs("div",{className:`
+      `,
+          children: [
+            i,
+            s.jsxs("div", {
+              className: `
           relative z-10 w-full max-w-[1710px] mx-auto
           px-6 sm:px-10 lg:px-24
           flex flex-col gap-10 lg:gap-12
           items-center lg:items-end
           text-center lg:text-right
-        `,children:[c,s.jsxs("div",{className:`
+        `,
+              children: [
+                c,
+                s.jsxs("div", {
+                  className: `
             w-full flex flex-col lg:flex-row
             gap-6 lg:gap-10
             items-center lg:items-end
             justify-between
-          `,children:[s.jsxs("p",{ref:n,className:`
+          `,
+                  children: [
+                    s.jsxs("p", {
+                      ref: n,
+                      className: `
               font-lato font-medium
               text-base sm:text-lg md:text-xl lg:text-2xl
               leading-relaxed
               max-w-[772px]
               text-black/85
-            `,children:["Finding accurate ",s.jsx("span",{className:"text-brand",children:"Menopause"})," ","information can feel overwhelming — from conflicting advice to outdated myths. Our resource library brings together clear, evidence-based content to help you understand your symptoms, explore options, and make informed choices with confidence."]}),s.jsx("p",{ref:r,className:`
+            `,
+                      children: [
+                        "Finding accurate ",
+                        s.jsx("span", {
+                          className: "text-brand",
+                          children: "Menopause",
+                        }),
+                        " ",
+                        "information can feel overwhelming — from conflicting advice to outdated myths. Our resource library brings together clear, evidence-based content to help you understand your symptoms, explore options, and make informed choices with confidence.",
+                      ],
+                    }),
+                    s.jsx("p", {
+                      ref: r,
+                      className: `
               font-lato font-semibold
               text-brand
               text-[11px] sm:text-xs
               tracking-widest
               uppercase
               whitespace-nowrap
-            `,children:"— RESOURCES MENOPAUSE"})]})]})]}),e[4]=m):m=e[4],m}f.registerPlugin(ae);const Se=[{title:"Sleep & Nutrition",description:"Tailored plans to help manage sleep disruption, hot flashes, and nutrition for energy and wellbeing."},{title:"Energy & Libido",description:"Supportive guidance for managing fatigue, hormonal changes, and maintaining intimacy during menopause."},{title:"Fitness",description:"Exercise programs designed for strength, bone health, and overall vitality through midlife."},{title:"Stress & Mindset",description:"Tools and techniques to manage stress, support mental clarity, and build emotional resilience."},{title:"Yoga & Meditation",description:"Mind–body practices designed to reduce stress, improve sleep, and support hormonal balance."},{title:"Beauty & Skincare",description:"Menopause-aware skincare and beauty services that support changing skin needs with confidence."},{title:"Coaching",description:"One-on-one support to help women navigate menopause with confidence, clarity, and purpose."}];function Ne(){const e=k.c(4),t=x.useRef(null),a=x.useRef(null);let n,r;e[0]===Symbol.for("react.memo_cache_sentinel")?(n=()=>{const i=f.context(()=>{if(f.from(".services-heading",{scrollTrigger:{trigger:t.current,start:"top 70%",end:"top 40%",scrub:1},y:30,opacity:0}),a.current){const c=a.current.querySelectorAll(".service-card");f.from(c,{scrollTrigger:{trigger:a.current,start:"top 75%",end:"bottom bottom",scrub:1},y:40,opacity:0,stagger:.08})}},t);return()=>i.revert()},r=[],e[0]=n,e[1]=r):(n=e[0],r=e[1]),x.useLayoutEffect(n,r);let l;e[2]===Symbol.for("react.memo_cache_sentinel")?(l=s.jsxs("div",{className:"services-heading flex flex-col items-center gap-4 mb-12 text-center",children:[s.jsxs("div",{className:"flex flex-col items-center gap-4",children:[s.jsx(ce,{className:"w-5 h-5 text-[#c7a486]"}),s.jsx("p",{className:"font-lato text-xs uppercase tracking-widest text-[#c7a486] opacity-75",children:"OUR SERVICES"})]}),s.jsx("h2",{className:"font-lora font-medium text-[#211f1e] text-2xl sm:text-3xl lg:text-4xl max-w-2xl",children:"Care and Services Designed for Midlife Women."}),s.jsx("p",{className:"font-lato text-xs sm:text-sm uppercase tracking-widest text-black/70 max-w-3xl",children:"From medical care to holistic wellbeing, MenoHealth brings together trusted services designed to support women through peri-menopause, menopause, and beyond — all in one place."})]}),e[2]=l):l=e[2];let o;return e[3]===Symbol.for("react.memo_cache_sentinel")?(o=s.jsx("section",{ref:t,className:"w-full bg-white py-16",children:s.jsxs("div",{className:"mx-auto max-w-7xl px-6",children:[l,s.jsx("div",{ref:a,className:`
+            `,
+                      children: "— RESOURCES MENOPAUSE",
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          ],
+        })),
+        (e[4] = m))
+      : (m = e[4]),
+    m
+  );
+}
+f.registerPlugin(ae);
+const Se = [
+  {
+    title: "Sleep & Nutrition",
+    description:
+      "Tailored plans to help manage sleep disruption, hot flashes, and nutrition for energy and wellbeing.",
+  },
+  {
+    title: "Energy & Libido",
+    description:
+      "Supportive guidance for managing fatigue, hormonal changes, and maintaining intimacy during menopause.",
+  },
+  {
+    title: "Fitness",
+    description:
+      "Exercise programs designed for strength, bone health, and overall vitality through midlife.",
+  },
+  {
+    title: "Stress & Mindset",
+    description:
+      "Tools and techniques to manage stress, support mental clarity, and build emotional resilience.",
+  },
+  {
+    title: "Yoga & Meditation",
+    description:
+      "Mind–body practices designed to reduce stress, improve sleep, and support hormonal balance.",
+  },
+  {
+    title: "Beauty & Skincare",
+    description:
+      "Menopause-aware skincare and beauty services that support changing skin needs with confidence.",
+  },
+  {
+    title: "Coaching",
+    description:
+      "One-on-one support to help women navigate menopause with confidence, clarity, and purpose.",
+  },
+];
+function Ne() {
+  const e = k.c(4),
+    t = x.useRef(null),
+    a = x.useRef(null);
+  let n, r;
+  e[0] === Symbol.for("react.memo_cache_sentinel")
+    ? ((n = () => {
+        const i = f.context(() => {
+          if (
+            (f.from(".services-heading", {
+              scrollTrigger: {
+                trigger: t.current,
+                start: "top 70%",
+                end: "top 40%",
+                scrub: 1,
+              },
+              y: 30,
+              opacity: 0,
+            }),
+            a.current)
+          ) {
+            const c = a.current.querySelectorAll(".service-card");
+            f.from(c, {
+              scrollTrigger: {
+                trigger: a.current,
+                start: "top 75%",
+                end: "bottom bottom",
+                scrub: 1,
+              },
+              y: 40,
+              opacity: 0,
+              stagger: 0.08,
+            });
+          }
+        }, t);
+        return () => i.revert();
+      }),
+      (r = []),
+      (e[0] = n),
+      (e[1] = r))
+    : ((n = e[0]), (r = e[1])),
+    x.useLayoutEffect(n, r);
+  let l;
+  e[2] === Symbol.for("react.memo_cache_sentinel")
+    ? ((l = s.jsxs("div", {
+        className:
+          "services-heading flex flex-col items-center gap-4 mb-12 text-center",
+        children: [
+          s.jsxs("div", {
+            className: "flex flex-col items-center gap-4",
+            children: [
+              s.jsx(ce, { className: "w-5 h-5 text-brand" }),
+              s.jsx("p", {
+                className:
+                  "font-lato text-xs uppercase tracking-widest text-brand opacity-75",
+                children: "OUR SERVICES",
+              }),
+            ],
+          }),
+          s.jsx("h2", {
+            className:
+              "font-lora font-medium text-[#211f1e] text-2xl sm:text-3xl lg:text-4xl max-w-2xl",
+            children: "Care and Services Designed for Midlife Women.",
+          }),
+          s.jsx("p", {
+            className:
+              "font-lato text-xs sm:text-sm uppercase tracking-widest text-black/70 max-w-3xl",
+            children:
+              "From medical care to holistic wellbeing, MenoHealth brings together trusted services designed to support women through peri-menopause, menopause, and beyond — all in one place.",
+          }),
+        ],
+      })),
+      (e[2] = l))
+    : (l = e[2]);
+  let o;
+  return (
+    e[3] === Symbol.for("react.memo_cache_sentinel")
+      ? ((o = s.jsx("section", {
+          ref: t,
+          className: "w-full bg-white py-16",
+          children: s.jsxs("div", {
+            className: "mx-auto max-w-7xl px-6",
+            children: [
+              l,
+              s.jsx("div", {
+                ref: a,
+                className: `
             grid gap-6
             grid-cols-1
             md:grid-cols-2
             lg:grid-cols-3
-          `,children:Se.map(ke)})]})}),e[3]=o):o=e[3],o}function ke(e,t){return s.jsxs("div",{className:`
+          `,
+                children: Se.map(ke),
+              }),
+            ],
+          }),
+        })),
+        (e[3] = o))
+      : (o = e[3]),
+    o
+  );
+}
+function ke(e, t) {
+  return s.jsxs(
+    "div",
+    {
+      className: `
                 service-card
                 border border-black/10
                 rounded-xl
                 p-6 sm:p-8
                 bg-white
                 flex flex-col gap-3
-              `,children:[s.jsx("h3",{className:"font-lora text-lg sm:text-xl text-black",children:e.title}),s.jsx("p",{className:"font-lato text-sm sm:text-base text-black/85 leading-relaxed",children:e.description})]},t)}f.registerPlugin(ae);const se=[{title:"Books for Mid-Awareness",subtitle:"Brain Fog and Menopause: What's Really Happening",type:"BBC News",platform:"Article",redirect:"https://www.bbc.co.uk/news/articles/c4gpkenx9dzo"},{title:"Why Menopause Warnings Were Removed",subtitle:"Why Menopause Warnings Were Removed — And Why It Matters",type:"Youtube",platform:"Video",redirect:"https://www.youtube.com/watch?v=eParptE0Zgs"},{title:"Menopause, Midlife, and More",subtitle:"Menopause, Midlife, and More",type:"Apple Podcasts",platform:"Podcast",redirect:"https://podcasts.apple.com/gb/podcast/dr-streichers-inside-information-menopause-midlife/id1615785832"},{title:"Dr Mary Claire Haver",subtitle:"Dr Mary Claire Haver",type:"Instagram",platform:"Video",redirect:"https://www.instagram.com/drmaryclaire/"}];function _e(){const e=k.c(7),t=x.useRef(null),a=x.useRef(null),n=Re;let r,l;e[0]===Symbol.for("react.memo_cache_sentinel")?(r=()=>{const u=f.context(()=>{f.from(".resources-heading",{scrollTrigger:{trigger:t.current,start:"top 70%",end:"top 40%",scrub:1},y:30,opacity:0}),a.current&&f.from(a.current.querySelectorAll(".resource-card"),{scrollTrigger:{trigger:a.current,start:"top 75%",end:"bottom bottom",scrub:1},y:40,opacity:0,stagger:.1})},t);return()=>u.revert()},l=[],e[0]=r,e[1]=l):(r=e[0],l=e[1]),x.useLayoutEffect(r,l);let o;e[2]===Symbol.for("react.memo_cache_sentinel")?(o=s.jsxs("div",{className:"resources-heading flex flex-col items-center gap-4 mb-12 text-center",children:[s.jsx(ce,{className:"w-5 h-5 text-[#c7a486]"}),s.jsx("p",{className:"font-lato text-xs uppercase tracking-widest text-[#c7a486] opacity-75",children:"CURATED CONTENT"}),s.jsx("h2",{className:"font-lora font-medium text-2xl text-black sm:text-3xl lg:text-4xl max-w-2xl",children:"Recommended Reads & Voices"})]}),e[2]=o):o=e[2];let i;e[3]===Symbol.for("react.memo_cache_sentinel")?(i=s.jsx("div",{className:"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",children:se.slice(0,3).map((u,b)=>s.jsxs("div",{className:"resource-card border border-black/10 rounded-xl p-6 flex flex-col justify-between",children:[s.jsxs("div",{className:"flex flex-col gap-4",children:[s.jsx("h3",{className:"font-lora text-lg sm:text-xl text-black",children:u.subtitle}),s.jsxs("div",{className:"flex items-center gap-2 text-sm text-black/80",children:[s.jsx("span",{children:u.type}),s.jsx("span",{className:"w-1.5 h-1.5 bg-black/80 rounded-full"}),s.jsx("span",{children:u.platform})]})]}),s.jsx("div",{className:"w-fit mt-6",children:s.jsx(ue,{label:"View Now",onClick:()=>n(u.redirect)})})]},b))}),e[3]=i):i=e[3];let c;e[4]===Symbol.for("react.memo_cache_sentinel")?(c=s.jsx("h3",{className:"font-lora text-lg sm:text-xl text-black",children:se[3].subtitle}),e[4]=c):c=e[4];let m;e[5]===Symbol.for("react.memo_cache_sentinel")?(m=s.jsxs("div",{className:"flex flex-col gap-4",children:[c,s.jsxs("div",{className:"flex items-center gap-2 text-sm text-black/80",children:[s.jsx("span",{children:se[3].type}),s.jsx("span",{className:"w-1.5 h-1.5 bg-black/80 rounded-full"}),s.jsx("span",{children:se[3].platform})]})]}),e[5]=m):m=e[5];let p;return e[6]===Symbol.for("react.memo_cache_sentinel")?(p=s.jsx("section",{ref:t,className:"w-full bg-white py-16",children:s.jsxs("div",{className:"mx-auto max-w-7xl px-6",children:[o,s.jsxs("div",{ref:a,className:"flex flex-col gap-10",children:[i,s.jsx("div",{className:"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3",children:s.jsxs("div",{className:"resource-card border border-black/10 rounded-xl p-6 flex flex-col justify-between lg:col-span-1",children:[m,s.jsx("div",{className:"w-fit mt-6",children:s.jsx(ue,{label:"View Now",onClick:()=>n(se[3].redirect)})})]})})]})]})}),e[6]=p):p=e[6],p}function Re(e){window.open(e,"_blank","noopener,noreferrer")}f.registerPlugin(ae);const oe=6,Ce=[{question:"What is menopause?",answer:[{type:"paragraph",text:"Menopause is the time when a woman stops having menstrual periods for 12 consecutive months due to a natural decline in hormones, especially oestrogen. It marks the end of reproductive years."}]},{question:"What is peri-menopause?",answer:[{type:"paragraph",text:"Peri-menopause is the transition leading up to menopause. Hormones fluctuate, and symptoms may begin even while periods are still happening — often in a less predictable pattern."}]},{question:"When does menopause usually start?",answer:[{type:"paragraph",text:"Most women reach menopause between 45–55, with the average age around 51."},{type:"paragraph",text:"Peri-menopause can start 4–8 years earlier."}]},{question:"What are the most common symptoms?",answer:[{type:"paragraph",text:"Symptoms vary but commonly include:"},{type:"list",items:["Hot flushes and night sweats","Irregular or heavy periods","Mood changes and anxiety","Brain fog and memory issues","Fatigue and sleep problems","Vaginal dryness and low libido","Weight changes"]},{type:"paragraph",text:"Every woman’s experience is unique — some have mild symptoms, others more severe."}]},{question:"How long does menopause last?",answer:[{type:"list",items:["Peri-menopause can last 4–10 years","Symptoms may continue into post-menopause — some only briefly, others longer-term"]}]},{question:"How is menopause diagnosed?",answer:[{type:"list",items:["If you’re over 45: usually based on symptoms and menstrual changes","If you’re under 45: a blood test may be used to check hormone levels"]}]},{question:"What is post-menopause?",answer:[{type:"paragraph",text:"Post-menopause is the time after menopause — symptoms may ease but health considerations like bone and heart health become more important."}]},{question:"What treatments are available?",answer:[{type:"paragraph",text:"Options include:"},{type:"list",items:["HRT (Hormone Replacement Therapy)","Non-hormonal medication","Cognitive behavioral therapy (CBT)","Nutrition, supplements, fitness & lifestyle changes","Pelvic health physiotherapy","Talk therapy / coaching"]},{type:"paragraph",text:"Getting personalised care helps you choose what’s right for you."}]},{question:"What is HRT and how does it help?",answer:[{type:"paragraph",text:"HRT replaces hormones that decline during menopause. It can help with:"},{type:"list",items:["Hot flushes & night sweats","Low mood & anxiety","Sleep problems","Joint aches","Vaginal dryness","Long-term bone protection"]},{type:"paragraph",text:"Your healthcare provider will discuss benefits, risks, and the best formulation for you."}]},{question:"Is menopause linked to mental health issues?",answer:[{type:"paragraph",text:"Yes — hormonal changes can affect:"},{type:"list",items:["Mood","Stress response","Concentration","Emotional resilience"]},{type:"paragraph",text:"Support is available through therapy, medication, lifestyle changes, and peer support."}]},{question:"Can menopause affect sex and intimacy?",answer:[{type:"paragraph",text:"Yes. Vaginal dryness, pain during intercourse, and reduced libido are common."},{type:"paragraph",text:"Treatments — including vaginal oestrogen, lubricants, moisturisers, and sexual therapy — can make intimacy enjoyable again."}]},{question:"Does menopause increase health risks?",answer:[{type:"paragraph",text:"Lower oestrogen can impact:"},{type:"list",items:["Bone density → osteoporosis risk","Heart health → increased cardiovascular risk","Metabolism → weight and cholesterol changes"]},{type:"paragraph",text:"Regular health checks, exercise, and nutrition help protect long-term health."}]},{question:"Can early or surgical menopause cause different symptoms?",answer:[{type:"paragraph",text:"Yes. If menopause happens before 45 (early) or before 40 (premature), symptoms may be more intense and medical treatment is often recommended for long-term protection."}]},{question:"What lifestyle changes help symptoms?",answer:[{type:"list",items:["Regular exercise","Nutrient-rich diet","Prioritising sleep","Managing stress","Reducing alcohol and caffeine","Staying socially connected"]},{type:"paragraph",text:"Small, consistent changes make a big difference."}]},{question:"Where can I get help?",answer:[{type:"paragraph",text:"You can speak to:"},{type:"list",items:["Your GP, gynaecologist, or menopause specialist","Pharmacists trained in women’s health","Accredited nutritionists, physiotherapists, and therapists","Peer support communities like MenoHealth"]}]}];function Me(){const e=k.c(31),[t,a]=x.useState(null),[n,r]=x.useState(""),[l,o]=x.useState(1),i=x.useRef(null),c=x.useRef(null);let m,p;e[0]===Symbol.for("react.memo_cache_sentinel")?(m=()=>{const g=f.context(()=>{f.from(".faq-heading",{scrollTrigger:{trigger:i.current,start:"top 70%",end:"top 40%",scrub:1},y:30,opacity:0}),c.current&&f.from(c.current.querySelectorAll(".faq-item"),{scrollTrigger:{trigger:c.current,start:"top 75%",end:"bottom bottom",scrub:1},y:30,opacity:0,stagger:.05})},i);return()=>g.revert()},p=[],e[0]=m,e[1]=p):(m=e[0],p=e[1]),x.useLayoutEffect(m,p);let u;e[2]!==n?(u=g=>g.question.toLowerCase().includes(n.toLowerCase())||g.answer.toLowerCase().includes(n.toLowerCase()),e[2]=n,e[3]=u):u=e[3];const b=Ce.filter(u),T=Math.ceil(b.length/oe),me=b.slice((l-1)*oe,l*oe);let C;e[4]===Symbol.for("react.memo_cache_sentinel")?(C=()=>{o(1),a(null)},e[4]=C):C=e[4];let M;e[5]!==n?(M=[n],e[5]=n,e[6]=M):M=e[6],x.useEffect(C,M);const de="w-full bg-white py-16",W="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16";let P,O,H;e[7]===Symbol.for("react.memo_cache_sentinel")?(P=s.jsx(ce,{className:"w-5 h-5 text-[#c7a486]"}),O=s.jsx("p",{className:"font-lato text-xs uppercase tracking-widest text-[#c7a486] opacity-75",children:"FREQUENTLY ASKED QUESTIONS"}),H=s.jsx("h2",{className:"font-lora font-medium text-black text-2xl sm:text-3xl lg:text-4xl max-w-2xl",children:"Your Questions About Menopause, Answered"}),e[7]=P,e[8]=O,e[9]=H):(P=e[7],O=e[8],H=e[9]);let L;e[10]===Symbol.for("react.memo_cache_sentinel")?(L=g=>r(g.target.value),e[10]=L):L=e[10];let v;e[11]!==n?(v=s.jsx("input",{type:"text",placeholder:"Search here",value:n,onChange:L,className:"flex-1 px-6 py-3 font-lato text-sm text-black/85 bg-transparent focus:outline-none"}),e[11]=n,e[12]=v):v=e[12];let I;e[13]===Symbol.for("react.memo_cache_sentinel")?(I=s.jsx("button",{className:"bg-[#c7a486]/70 hover:bg-[#c7a486] transition-colors px-6 py-3 text-sm font-lato text-white",children:"Search"}),e[13]=I):I=e[13];let E;e[14]!==v?(E=s.jsxs("div",{className:"faq-heading flex flex-col items-center gap-4 mb-12 text-center",children:[P,O,H,s.jsx("div",{className:"w-full max-w-xl mt-4",children:s.jsxs("div",{className:"flex flex-col sm:flex-row overflow-hidden rounded-full border border-black/20",children:[v,I]})})]}),e[14]=v,e[15]=E):E=e[15];const $="mx-auto max-w-3xl";let S;e[16]!==l||e[17]!==t?(S=(g,R)=>{const h=(l-1)*oe+R;return s.jsxs("div",{className:"faq-item border-b border-black/10 last:border-none",children:[s.jsxs("button",{onClick:()=>a(t===h?null:h),className:"w-full py-5 sm:py-6 flex items-start justify-between gap-4 text-left hover:bg-black/5 transition rounded-md px-2 sm:px-4",children:[s.jsx("h3",{className:"font-lora text-base sm:text-lg text-black",children:g.question}),s.jsx(je,{className:`w-5 h-5 text-[#c7a486] transition-transform ${t===h?"rotate-180":""}`})]}),t===h&&s.jsx("div",{className:"px-2 sm:px-4 pb-6",children:s.jsx("div",{className:"flex flex-col gap-3",children:g.answer.map(Pe)})})]},h)},e[16]=l,e[17]=t,e[18]=S):S=e[18];const _=me.map(S);let y;e[19]!==_?(y=s.jsx("div",{ref:c,className:$,children:_}),e[19]=_,e[20]=y):y=e[20];let w;e[21]!==l||e[22]!==T?(w=T>1&&s.jsx("div",{className:"mt-10 flex justify-center gap-2 flex-wrap",children:Array.from({length:T}).map((g,R)=>{const h=R+1,A=h===l;return s.jsx("button",{onClick:()=>{o(h),a(null)},className:`
+              `,
+      children: [
+        s.jsx("h3", {
+          className: "font-lora text-lg sm:text-xl text-black",
+          children: e.title,
+        }),
+        s.jsx("p", {
+          className:
+            "font-lato text-sm sm:text-base text-black/85 leading-relaxed",
+          children: e.description,
+        }),
+      ],
+    },
+    t
+  );
+}
+f.registerPlugin(ae);
+const se = [
+  {
+    title: "Books for Mid-Awareness",
+    subtitle: "Brain Fog and Menopause: What's Really Happening",
+    type: "BBC News",
+    platform: "Article",
+    redirect: "https://www.bbc.co.uk/news/articles/c4gpkenx9dzo",
+  },
+  {
+    title: "Why Menopause Warnings Were Removed",
+    subtitle: "Why Menopause Warnings Were Removed — And Why It Matters",
+    type: "Youtube",
+    platform: "Video",
+    redirect: "https://www.youtube.com/watch?v=eParptE0Zgs",
+  },
+  {
+    title: "Menopause, Midlife, and More",
+    subtitle: "Menopause, Midlife, and More",
+    type: "Apple Podcasts",
+    platform: "Podcast",
+    redirect:
+      "https://podcasts.apple.com/gb/podcast/dr-streichers-inside-information-menopause-midlife/id1615785832",
+  },
+  {
+    title: "Dr Mary Claire Haver",
+    subtitle: "Dr Mary Claire Haver",
+    type: "Instagram",
+    platform: "Video",
+    redirect: "https://www.instagram.com/drmaryclaire/",
+  },
+];
+function _e() {
+  const e = k.c(7),
+    t = x.useRef(null),
+    a = x.useRef(null),
+    n = Re;
+  let r, l;
+  e[0] === Symbol.for("react.memo_cache_sentinel")
+    ? ((r = () => {
+        const u = f.context(() => {
+          f.from(".resources-heading", {
+            scrollTrigger: {
+              trigger: t.current,
+              start: "top 70%",
+              end: "top 40%",
+              scrub: 1,
+            },
+            y: 30,
+            opacity: 0,
+          }),
+            a.current &&
+              f.from(a.current.querySelectorAll(".resource-card"), {
+                scrollTrigger: {
+                  trigger: a.current,
+                  start: "top 75%",
+                  end: "bottom bottom",
+                  scrub: 1,
+                },
+                y: 40,
+                opacity: 0,
+                stagger: 0.1,
+              });
+        }, t);
+        return () => u.revert();
+      }),
+      (l = []),
+      (e[0] = r),
+      (e[1] = l))
+    : ((r = e[0]), (l = e[1])),
+    x.useLayoutEffect(r, l);
+  let o;
+  e[2] === Symbol.for("react.memo_cache_sentinel")
+    ? ((o = s.jsxs("div", {
+        className:
+          "resources-heading flex flex-col items-center gap-4 mb-12 text-center",
+        children: [
+          s.jsx(ce, { className: "w-5 h-5 text-brand" }),
+          s.jsx("p", {
+            className:
+              "font-lato text-xs uppercase tracking-widest text-brand opacity-75",
+            children: "CURATED CONTENT",
+          }),
+          s.jsx("h2", {
+            className:
+              "font-lora font-medium text-2xl text-black sm:text-3xl lg:text-4xl max-w-2xl",
+            children: "Recommended Reads & Voices",
+          }),
+        ],
+      })),
+      (e[2] = o))
+    : (o = e[2]);
+  let i;
+  e[3] === Symbol.for("react.memo_cache_sentinel")
+    ? ((i = s.jsx("div", {
+        className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+        children: se.slice(0, 3).map((u, b) =>
+          s.jsxs(
+            "div",
+            {
+              className:
+                "resource-card border border-black/10 rounded-xl p-6 flex flex-col justify-between",
+              children: [
+                s.jsxs("div", {
+                  className: "flex flex-col gap-4",
+                  children: [
+                    s.jsx("h3", {
+                      className: "font-lora text-lg sm:text-xl text-black",
+                      children: u.subtitle,
+                    }),
+                    s.jsxs("div", {
+                      className:
+                        "flex items-center gap-2 text-sm text-black/80",
+                      children: [
+                        s.jsx("span", { children: u.type }),
+                        s.jsx("span", {
+                          className: "w-1.5 h-1.5 bg-black/80 rounded-full",
+                        }),
+                        s.jsx("span", { children: u.platform }),
+                      ],
+                    }),
+                  ],
+                }),
+                s.jsx("div", {
+                  className: "w-fit mt-6",
+                  children: s.jsx(ue, {
+                    label: "View Now",
+                    onClick: () => n(u.redirect),
+                  }),
+                }),
+              ],
+            },
+            b
+          )
+        ),
+      })),
+      (e[3] = i))
+    : (i = e[3]);
+  let c;
+  e[4] === Symbol.for("react.memo_cache_sentinel")
+    ? ((c = s.jsx("h3", {
+        className: "font-lora text-lg sm:text-xl text-black",
+        children: se[3].subtitle,
+      })),
+      (e[4] = c))
+    : (c = e[4]);
+  let m;
+  e[5] === Symbol.for("react.memo_cache_sentinel")
+    ? ((m = s.jsxs("div", {
+        className: "flex flex-col gap-4",
+        children: [
+          c,
+          s.jsxs("div", {
+            className: "flex items-center gap-2 text-sm text-black/80",
+            children: [
+              s.jsx("span", { children: se[3].type }),
+              s.jsx("span", {
+                className: "w-1.5 h-1.5 bg-black/80 rounded-full",
+              }),
+              s.jsx("span", { children: se[3].platform }),
+            ],
+          }),
+        ],
+      })),
+      (e[5] = m))
+    : (m = e[5]);
+  let p;
+  return (
+    e[6] === Symbol.for("react.memo_cache_sentinel")
+      ? ((p = s.jsx("section", {
+          ref: t,
+          className: "w-full bg-white py-16",
+          children: s.jsxs("div", {
+            className: "mx-auto max-w-7xl px-6",
+            children: [
+              o,
+              s.jsxs("div", {
+                ref: a,
+                className: "flex flex-col gap-10",
+                children: [
+                  i,
+                  s.jsx("div", {
+                    className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3",
+                    children: s.jsxs("div", {
+                      className:
+                        "resource-card border border-black/10 rounded-xl p-6 flex flex-col justify-between lg:col-span-1",
+                      children: [
+                        m,
+                        s.jsx("div", {
+                          className: "w-fit mt-6",
+                          children: s.jsx(ue, {
+                            label: "View Now",
+                            onClick: () => n(se[3].redirect),
+                          }),
+                        }),
+                      ],
+                    }),
+                  }),
+                ],
+              }),
+            ],
+          }),
+        })),
+        (e[6] = p))
+      : (p = e[6]),
+    p
+  );
+}
+function Re(e) {
+  window.open(e, "_blank", "noopener,noreferrer");
+}
+f.registerPlugin(ae);
+const oe = 6,
+  Ce = [
+    {
+      question: "What is menopause?",
+      answer: [
+        {
+          type: "paragraph",
+          text:
+            "Menopause is the time when a woman stops having menstrual periods for 12 consecutive months due to a natural decline in hormones, especially oestrogen. It marks the end of reproductive years.",
+        },
+      ],
+    },
+    {
+      question: "What is peri-menopause?",
+      answer: [
+        {
+          type: "paragraph",
+          text:
+            "Peri-menopause is the transition leading up to menopause. Hormones fluctuate, and symptoms may begin even while periods are still happening — often in a less predictable pattern.",
+        },
+      ],
+    },
+    {
+      question: "When does menopause usually start?",
+      answer: [
+        {
+          type: "paragraph",
+          text:
+            "Most women reach menopause between 45–55, with the average age around 51.",
+        },
+        {
+          type: "paragraph",
+          text: "Peri-menopause can start 4–8 years earlier.",
+        },
+      ],
+    },
+    {
+      question: "What are the most common symptoms?",
+      answer: [
+        { type: "paragraph", text: "Symptoms vary but commonly include:" },
+        {
+          type: "list",
+          items: [
+            "Hot flushes and night sweats",
+            "Irregular or heavy periods",
+            "Mood changes and anxiety",
+            "Brain fog and memory issues",
+            "Fatigue and sleep problems",
+            "Vaginal dryness and low libido",
+            "Weight changes",
+          ],
+        },
+        {
+          type: "paragraph",
+          text:
+            "Every woman’s experience is unique — some have mild symptoms, others more severe.",
+        },
+      ],
+    },
+    {
+      question: "How long does menopause last?",
+      answer: [
+        {
+          type: "list",
+          items: [
+            "Peri-menopause can last 4–10 years",
+            "Symptoms may continue into post-menopause — some only briefly, others longer-term",
+          ],
+        },
+      ],
+    },
+    {
+      question: "How is menopause diagnosed?",
+      answer: [
+        {
+          type: "list",
+          items: [
+            "If you’re over 45: usually based on symptoms and menstrual changes",
+            "If you’re under 45: a blood test may be used to check hormone levels",
+          ],
+        },
+      ],
+    },
+    {
+      question: "What is post-menopause?",
+      answer: [
+        {
+          type: "paragraph",
+          text:
+            "Post-menopause is the time after menopause — symptoms may ease but health considerations like bone and heart health become more important.",
+        },
+      ],
+    },
+    {
+      question: "What treatments are available?",
+      answer: [
+        { type: "paragraph", text: "Options include:" },
+        {
+          type: "list",
+          items: [
+            "HRT (Hormone Replacement Therapy)",
+            "Non-hormonal medication",
+            "Cognitive behavioral therapy (CBT)",
+            "Nutrition, supplements, fitness & lifestyle changes",
+            "Pelvic health physiotherapy",
+            "Talk therapy / coaching",
+          ],
+        },
+        {
+          type: "paragraph",
+          text:
+            "Getting personalised care helps you choose what’s right for you.",
+        },
+      ],
+    },
+    {
+      question: "What is HRT and how does it help?",
+      answer: [
+        {
+          type: "paragraph",
+          text:
+            "HRT replaces hormones that decline during menopause. It can help with:",
+        },
+        {
+          type: "list",
+          items: [
+            "Hot flushes & night sweats",
+            "Low mood & anxiety",
+            "Sleep problems",
+            "Joint aches",
+            "Vaginal dryness",
+            "Long-term bone protection",
+          ],
+        },
+        {
+          type: "paragraph",
+          text:
+            "Your healthcare provider will discuss benefits, risks, and the best formulation for you.",
+        },
+      ],
+    },
+    {
+      question: "Is menopause linked to mental health issues?",
+      answer: [
+        { type: "paragraph", text: "Yes — hormonal changes can affect:" },
+        {
+          type: "list",
+          items: [
+            "Mood",
+            "Stress response",
+            "Concentration",
+            "Emotional resilience",
+          ],
+        },
+        {
+          type: "paragraph",
+          text:
+            "Support is available through therapy, medication, lifestyle changes, and peer support.",
+        },
+      ],
+    },
+    {
+      question: "Can menopause affect sex and intimacy?",
+      answer: [
+        {
+          type: "paragraph",
+          text:
+            "Yes. Vaginal dryness, pain during intercourse, and reduced libido are common.",
+        },
+        {
+          type: "paragraph",
+          text:
+            "Treatments — including vaginal oestrogen, lubricants, moisturisers, and sexual therapy — can make intimacy enjoyable again.",
+        },
+      ],
+    },
+    {
+      question: "Does menopause increase health risks?",
+      answer: [
+        { type: "paragraph", text: "Lower oestrogen can impact:" },
+        {
+          type: "list",
+          items: [
+            "Bone density → osteoporosis risk",
+            "Heart health → increased cardiovascular risk",
+            "Metabolism → weight and cholesterol changes",
+          ],
+        },
+        {
+          type: "paragraph",
+          text:
+            "Regular health checks, exercise, and nutrition help protect long-term health.",
+        },
+      ],
+    },
+    {
+      question: "Can early or surgical menopause cause different symptoms?",
+      answer: [
+        {
+          type: "paragraph",
+          text:
+            "Yes. If menopause happens before 45 (early) or before 40 (premature), symptoms may be more intense and medical treatment is often recommended for long-term protection.",
+        },
+      ],
+    },
+    {
+      question: "What lifestyle changes help symptoms?",
+      answer: [
+        {
+          type: "list",
+          items: [
+            "Regular exercise",
+            "Nutrient-rich diet",
+            "Prioritising sleep",
+            "Managing stress",
+            "Reducing alcohol and caffeine",
+            "Staying socially connected",
+          ],
+        },
+        {
+          type: "paragraph",
+          text: "Small, consistent changes make a big difference.",
+        },
+      ],
+    },
+    {
+      question: "Where can I get help?",
+      answer: [
+        { type: "paragraph", text: "You can speak to:" },
+        {
+          type: "list",
+          items: [
+            "Your GP, gynaecologist, or menopause specialist",
+            "Pharmacists trained in women’s health",
+            "Accredited nutritionists, physiotherapists, and therapists",
+            "Peer support communities like MenoHealth",
+          ],
+        },
+      ],
+    },
+  ];
+function Me() {
+  const e = k.c(31),
+    [t, a] = x.useState(null),
+    [n, r] = x.useState(""),
+    [l, o] = x.useState(1),
+    i = x.useRef(null),
+    c = x.useRef(null);
+  let m, p;
+  e[0] === Symbol.for("react.memo_cache_sentinel")
+    ? ((m = () => {
+        const g = f.context(() => {
+          f.from(".faq-heading", {
+            scrollTrigger: {
+              trigger: i.current,
+              start: "top 70%",
+              end: "top 40%",
+              scrub: 1,
+            },
+            y: 30,
+            opacity: 0,
+          }),
+            c.current &&
+              f.from(c.current.querySelectorAll(".faq-item"), {
+                scrollTrigger: {
+                  trigger: c.current,
+                  start: "top 75%",
+                  end: "bottom bottom",
+                  scrub: 1,
+                },
+                y: 30,
+                opacity: 0,
+                stagger: 0.05,
+              });
+        }, i);
+        return () => g.revert();
+      }),
+      (p = []),
+      (e[0] = m),
+      (e[1] = p))
+    : ((m = e[0]), (p = e[1])),
+    x.useLayoutEffect(m, p);
+  let u;
+  e[2] !== n
+    ? ((u = (g) =>
+        g.question.toLowerCase().includes(n.toLowerCase()) ||
+        g.answer.toLowerCase().includes(n.toLowerCase())),
+      (e[2] = n),
+      (e[3] = u))
+    : (u = e[3]);
+  const b = Ce.filter(u),
+    T = Math.ceil(b.length / oe),
+    me = b.slice((l - 1) * oe, l * oe);
+  let C;
+  e[4] === Symbol.for("react.memo_cache_sentinel")
+    ? ((C = () => {
+        o(1), a(null);
+      }),
+      (e[4] = C))
+    : (C = e[4]);
+  let M;
+  e[5] !== n ? ((M = [n]), (e[5] = n), (e[6] = M)) : (M = e[6]),
+    x.useEffect(C, M);
+  const de = "w-full bg-white py-16",
+    W = "mx-auto max-w-7xl px-6 sm:px-10 lg:px-16";
+  let P, O, H;
+  e[7] === Symbol.for("react.memo_cache_sentinel")
+    ? ((P = s.jsx(ce, { className: "w-5 h-5 text-brand" })),
+      (O = s.jsx("p", {
+        className:
+          "font-lato text-xs uppercase tracking-widest text-brand opacity-75",
+        children: "FREQUENTLY ASKED QUESTIONS",
+      })),
+      (H = s.jsx("h2", {
+        className:
+          "font-lora font-medium text-black text-2xl sm:text-3xl lg:text-4xl max-w-2xl",
+        children: "Your Questions About Menopause, Answered",
+      })),
+      (e[7] = P),
+      (e[8] = O),
+      (e[9] = H))
+    : ((P = e[7]), (O = e[8]), (H = e[9]));
+  let L;
+  e[10] === Symbol.for("react.memo_cache_sentinel")
+    ? ((L = (g) => r(g.target.value)), (e[10] = L))
+    : (L = e[10]);
+  let v;
+  e[11] !== n
+    ? ((v = s.jsx("input", {
+        type: "text",
+        placeholder: "Search here",
+        value: n,
+        onChange: L,
+        className:
+          "flex-1 px-6 py-3 font-lato text-sm text-black/85 bg-transparent focus:outline-none",
+      })),
+      (e[11] = n),
+      (e[12] = v))
+    : (v = e[12]);
+  let I;
+  e[13] === Symbol.for("react.memo_cache_sentinel")
+    ? ((I = s.jsx("button", {
+        className:
+          "bg-brand/70 hover:bg-brand transition-colors px-6 py-3 text-sm font-lato text-white",
+        children: "Search",
+      })),
+      (e[13] = I))
+    : (I = e[13]);
+  let E;
+  e[14] !== v
+    ? ((E = s.jsxs("div", {
+        className:
+          "faq-heading flex flex-col items-center gap-4 mb-12 text-center",
+        children: [
+          P,
+          O,
+          H,
+          s.jsx("div", {
+            className: "w-full max-w-xl mt-4",
+            children: s.jsxs("div", {
+              className:
+                "flex flex-col sm:flex-row overflow-hidden rounded-full border border-black/20",
+              children: [v, I],
+            }),
+          }),
+        ],
+      })),
+      (e[14] = v),
+      (e[15] = E))
+    : (E = e[15]);
+  const $ = "mx-auto max-w-3xl";
+  let S;
+  e[16] !== l || e[17] !== t
+    ? ((S = (g, R) => {
+        const h = (l - 1) * oe + R;
+        return s.jsxs(
+          "div",
+          {
+            className: "faq-item border-b border-black/10 last:border-none",
+            children: [
+              s.jsxs("button", {
+                onClick: () => a(t === h ? null : h),
+                className:
+                  "w-full py-5 sm:py-6 flex items-start justify-between gap-4 text-left hover:bg-black/5 transition rounded-md px-2 sm:px-4",
+                children: [
+                  s.jsx("h3", {
+                    className: "font-lora text-base sm:text-lg text-black",
+                    children: g.question,
+                  }),
+                  s.jsx(je, {
+                    className: `w-5 h-5 text-brand transition-transform ${
+                      t === h ? "rotate-180" : ""
+                    }`,
+                  }),
+                ],
+              }),
+              t === h &&
+                s.jsx("div", {
+                  className: "px-2 sm:px-4 pb-6",
+                  children: s.jsx("div", {
+                    className: "flex flex-col gap-3",
+                    children: g.answer.map(Pe),
+                  }),
+                }),
+            ],
+          },
+          h
+        );
+      }),
+      (e[16] = l),
+      (e[17] = t),
+      (e[18] = S))
+    : (S = e[18]);
+  const _ = me.map(S);
+  let y;
+  e[19] !== _
+    ? ((y = s.jsx("div", { ref: c, className: $, children: _ })),
+      (e[19] = _),
+      (e[20] = y))
+    : (y = e[20]);
+  let w;
+  e[21] !== l || e[22] !== T
+    ? ((w =
+        T > 1 &&
+        s.jsx("div", {
+          className: "mt-10 flex justify-center gap-2 flex-wrap",
+          children: Array.from({ length: T }).map((g, R) => {
+            const h = R + 1,
+              A = h === l;
+            return s.jsx(
+              "button",
+              {
+                onClick: () => {
+                  o(h), a(null);
+                },
+                className: `
                     px-4 py-2 rounded-full text-sm font-lato transition
-                    ${A?"bg-[#c7a486] text-white":"border border-black/20 text-black/70 hover:bg-black/5"}
-                  `,children:h},h)})}),e[21]=l,e[22]=T,e[23]=w):w=e[23];let j;e[24]!==b.length?(j=b.length===0&&s.jsx("p",{className:"mt-8 text-center text-sm font-lato text-black/50",children:"No FAQs found matching your search."}),e[24]=b.length,e[25]=j):j=e[25];let N;return e[26]!==E||e[27]!==y||e[28]!==w||e[29]!==j?(N=s.jsx("section",{ref:i,className:de,children:s.jsxs("div",{className:W,children:[E,y,w,j]})}),e[26]=E,e[27]=y,e[28]=w,e[29]=j,e[30]=N):N=e[30],N}function Pe(e,t){return e.type==="paragraph"?s.jsx("p",{className:"font-lato text-sm sm:text-base text-black/70 leading-relaxed",children:e.text},t):e.type==="list"?s.jsx("ul",{className:"list-disc pl-5 space-y-1 font-lato text-sm sm:text-base text-black/70",children:e.items.map(Ee)},t):null}function Ee(e,t){return s.jsx("li",{children:e},t)}const Te=["Hot flushes","Night sweats","Sleep problems","Fatigue / low energy","Brain fog / memory issues","Difficulty concentrating","Mood swings","Low mood or depression","Anxiety / panic","Irritability","Low libido","Vaginal dryness / discomfort","Pain during sex","Bladder issues","Joint or muscle pain","Headaches or migraines","Heart palpitations","Weight change","Hair or skin changes","Changes in menstrual cycle"],He=["Work / productivity","Home / daily life","Relationships","Emotional wellbeing","Social life","Sleep quality"],Ie=["Mood & emotional stability","Sleep improvement","Relieving hot flushes","Supporting intimacy & sex life","Brain fog / cognitive clarity","Weight, nutrition & metabolism","Pain & physical comfort","Overall energy & vitality","Bone & heart health","Understanding my stage of menopause","A plan from a menopause specialist","Community support / not feeling alone"],Ae=["Specialist medical advice (HRT etc.)","Nutrition & supplements","Fitness & pelvic health","Mental wellbeing / CBT / coaching","Holistic therapies","Peer community conversations","Lifestyle programmes & education"];function qe(){const e=k.c(76);let t;e[0]===Symbol.for("react.memo_cache_sentinel")?(t={name:"",date:"",age:"",menstrualStatus:""},e[0]=t):t=e[0];const[a,n]=x.useState(t);let r;e[1]===Symbol.for("react.memo_cache_sentinel")?(r={},e[1]=r):r=e[1];const[l,o]=x.useState(r);let i;e[2]===Symbol.for("react.memo_cache_sentinel")?(i={},e[2]=i):i=e[2];const[c,m]=x.useState(i);let p;e[3]===Symbol.for("react.memo_cache_sentinel")?(p={earlyMenopause:!1,anxietyDepression:!1,thyroid:!1,smoker:!1,hysterectomy:!1,hrt:!1,contraception:!1},e[3]=p):p=e[3];const[u,b]=x.useState(p),[T,me]=x.useState("");let C;e[4]===Symbol.for("react.memo_cache_sentinel")?(C=[],e[4]=C):C=e[4];const[M,de]=x.useState(C);let W;e[5]===Symbol.for("react.memo_cache_sentinel")?(W=[],e[5]=W):W=e[5];const[P,O]=x.useState(W),[H,L]=x.useState("");let v;e[6]!==l?(v=Object.values(l).reduce(Oe,0),e[6]=l,e[7]=v):v=e[7];const I=v,E=We;let $;e[8]===Symbol.for("react.memo_cache_sentinel")?($=s.jsxs("div",{className:"flex flex-col items-center gap-4 mb-14 text-center",children:[s.jsx(ce,{className:"w-5 h-5 text-[#c7a486]"}),s.jsx("p",{className:"font-lato text-xs uppercase tracking-widest text-[#c7a486] opacity-75",children:"MENOPAUSE SYMPTOM TRACKER"}),s.jsx("h2",{className:"font-lora text-black text-2xl sm:text-3xl lg:text-4xl max-w-2xl",children:"Understand Your Symptoms. Take Control."}),s.jsx("p",{className:"font-lato text-sm text-black/70 max-w-3xl",children:"Track symptoms, understand their impact, and build a clearer picture of what support you may need — all in one place."})]}),e[8]=$):$=e[8];let S;e[9]!==a?(S=d=>n({...a,name:d}),e[9]=a,e[10]=S):S=e[10];let _;e[11]!==a.name||e[12]!==S?(_=s.jsx(ie,{label:"Name",value:a.name,placeholder:"eg: Jhon Doe",onChange:S}),e[11]=a.name,e[12]=S,e[13]=_):_=e[13];let y;e[14]!==a?(y=d=>n({...a,date:d}),e[14]=a,e[15]=y):y=e[15];let w;e[16]!==a.date||e[17]!==y?(w=s.jsx(ie,{label:"Date",type:"date",value:a.date,onChange:y}),e[16]=a.date,e[17]=y,e[18]=w):w=e[18];let j;e[19]!==a?(j=d=>n({...a,age:d}),e[19]=a,e[20]=j):j=e[20];let N;e[21]!==a.age||e[22]!==j?(N=s.jsx(ie,{label:"Age",type:"number",value:a.age,placeholder:"eg: 21",onChange:j}),e[21]=a.age,e[22]=j,e[23]=N):N=e[23];let g;e[24]===Symbol.for("react.memo_cache_sentinel")?(g=["Regular periods","Irregular periods","No periods (12+ months)"],e[24]=g):g=e[24];let R;e[25]!==a?(R=d=>n({...a,menstrualStatus:d}),e[25]=a,e[26]=R):R=e[26];let h;e[27]!==a.menstrualStatus||e[28]!==R?(h=s.jsx(Le,{label:"Menstrual Status",options:g,value:a.menstrualStatus,onChange:R}),e[27]=a.menstrualStatus,e[28]=R,e[29]=h):h=e[29];let A;e[30]!==w||e[31]!==N||e[32]!==h||e[33]!==_?(A=s.jsxs(te,{title:"Personal Information",children:[_,w,N,h]}),e[30]=w,e[31]=N,e[32]=h,e[33]=_,e[34]=A):A=e[34];let B;e[35]!==l?(B=Te.map(d=>s.jsx(xe,{label:d,value:l[d],onChange:q=>o({...l,[d]:q})},d)),e[35]=l,e[36]=B):B=e[36];let Y;e[37]!==I?(Y=s.jsxs("p",{className:"text-sm text-black/70 mt-4",children:["Total Symptom Score: ",s.jsxs("b",{children:[I," / 60"]})]}),e[37]=I,e[38]=Y):Y=e[38];let F;e[39]!==B||e[40]!==Y?(F=s.jsxs(te,{title:"Symptom Rating (Past 4 Weeks)",children:[B,Y]}),e[39]=B,e[40]=Y,e[41]=F):F=e[41];let D;e[42]!==c?(D=He.map(d=>s.jsx(xe,{label:d,value:c[d],onChange:q=>m({...c,[d]:q})},d)),e[42]=c,e[43]=D):D=e[43];let U;e[44]!==D?(U=s.jsx(te,{title:"Life Impact Assessment",children:D}),e[44]=D,e[45]=U):U=e[45];let V;e[46]!==u?(V=Object.entries(u),e[46]=u,e[47]=V):V=e[47];let Q;e[48]!==u||e[49]!==V?(Q=V.map(d=>{const[q,he]=d;return s.jsx(pe,{label:q.replace(/([A-Z])/g," $1"),checked:he,onChange:fe=>b({...u,[q]:fe})},q)}),e[48]=u,e[49]=V,e[50]=Q):Q=e[50];let le;e[51]===Symbol.for("react.memo_cache_sentinel")?(le=d=>me(d.target.value),e[51]=le):le=e[51];let G;e[52]!==T?(G=s.jsx("textarea",{className:"mt-4 w-full text-black/85 rounded-xl border border-black/10 p-4 text-sm",placeholder:"Other medical conditions or medications...",value:T,onChange:le}),e[52]=T,e[53]=G):G=e[53];let J;e[54]!==Q||e[55]!==G?(J=s.jsxs(te,{title:"Medical & Personal History",children:[Q,G]}),e[54]=Q,e[55]=G,e[56]=J):J=e[56];let z;e[57]!==M?(z=Ie.map(d=>s.jsx(pe,{label:d,checked:M.includes(d),onChange:()=>E(d,M,de,3)},d)),e[57]=M,e[58]=z):z=e[58];let K;e[59]!==H?(K=s.jsx(ie,{label:"Other",value:H,onChange:L,placeholder:"Write Other Info Here..."}),e[59]=H,e[60]=K):K=e[60];let Z;e[61]!==z||e[62]!==K?(Z=s.jsxs(te,{title:"What Matters Most Right Now (Select up to 3)",children:[z,K]}),e[61]=z,e[62]=K,e[63]=Z):Z=e[63];let X;e[64]!==P?(X=Ae.map(d=>s.jsx(pe,{label:d,checked:P.includes(d),onChange:()=>E(d,P,O)},d)),e[64]=P,e[65]=X):X=e[65];let ee;e[66]!==X?(ee=s.jsx(te,{title:"Preferred Types of Support",children:X}),e[66]=X,e[67]=ee):ee=e[67];let ne;e[68]===Symbol.for("react.memo_cache_sentinel")?(ne=s.jsx("div",{className:"mt-14 flex justify-center",children:s.jsx(ue,{label:"Submit Tracker"})}),e[68]=ne):ne=e[68];let re;return e[69]!==A||e[70]!==F||e[71]!==U||e[72]!==J||e[73]!==Z||e[74]!==ee?(re=s.jsx("section",{className:"w-full bg-white py-16",children:s.jsxs("div",{className:"mx-auto max-w-7xl px-6 lg:px-16",children:[$,A,F,U,J,Z,ee,ne]})}),e[69]=A,e[70]=F,e[71]=U,e[72]=J,e[73]=Z,e[74]=ee,e[75]=re):re=e[75],re}function We(e,t,a,n){t.includes(e)?a(t.filter(r=>r!==e)):(!n||t.length<n)&&a([...t,e])}function Oe(e,t){return e+t}const te=e=>{const t=k.c(7),{title:a,children:n}=e;let r;t[0]!==a?(r=s.jsx("h3",{className:"font-lora text-xl mb-6 text-black",children:a}),t[0]=a,t[1]=r):r=t[1];let l;t[2]!==n?(l=s.jsx("div",{className:"grid gap-4",children:n}),t[2]=n,t[3]=l):l=t[3];let o;return t[4]!==r||t[5]!==l?(o=s.jsxs("div",{className:"mb-14",children:[r,l]}),t[4]=r,t[5]=l,t[6]=o):o=t[6],o},ie=e=>{const t=k.c(12),{label:a,value:n,onChange:r,type:l,placeholder:o}=e,i=l===void 0?"text":l;let c;t[0]!==a?(c=s.jsx("label",{className:"text-sm text-black/70",children:a}),t[0]=a,t[1]=c):c=t[1];let m;t[2]!==r?(m=b=>r(b.target.value),t[2]=r,t[3]=m):m=t[3];let p;t[4]!==o||t[5]!==m||t[6]!==i||t[7]!==n?(p=s.jsx("input",{type:i,value:n,onChange:m,placeholder:o,className:"mt-1 w-full text-black/85 rounded-xl border border-black/10 px-4 py-2 text-sm"}),t[4]=o,t[5]=m,t[6]=i,t[7]=n,t[8]=p):p=t[8];let u;return t[9]!==c||t[10]!==p?(u=s.jsxs("div",{children:[c,p]}),t[9]=c,t[10]=p,t[11]=u):u=t[11],u},Le=e=>{const t=k.c(14),{label:a,options:n,value:r,onChange:l}=e;let o;t[0]!==a?(o=s.jsx("label",{className:"text-sm text-black/70",children:a}),t[0]=a,t[1]=o):o=t[1];let i;t[2]!==l?(i=b=>l(b.target.value),t[2]=l,t[3]=i):i=t[3];let c;t[4]===Symbol.for("react.memo_cache_sentinel")?(c=s.jsx("option",{value:"",children:"Select"}),t[4]=c):c=t[4];let m;t[5]!==n?(m=n.map($e),t[5]=n,t[6]=m):m=t[6];let p;t[7]!==i||t[8]!==m||t[9]!==r?(p=s.jsxs("select",{value:r,onChange:i,className:"mt-1 w-full rounded-xl text-black/85 border border-black/10 px-4 py-2 text-sm",children:[c,m]}),t[7]=i,t[8]=m,t[9]=r,t[10]=p):p=t[10];let u;return t[11]!==o||t[12]!==p?(u=s.jsxs("div",{children:[o,p]}),t[11]=o,t[12]=p,t[13]=u):u=t[13],u},xe=e=>{const t=k.c(9),{label:a,value:n,onChange:r}=e;let l;t[0]!==a?(l=s.jsx("span",{className:"text-sm text-black/80",children:a}),t[0]=a,t[1]=l):l=t[1];let o;t[2]===Symbol.for("react.memo_cache_sentinel")?(o=[0,1,2,3],t[2]=o):o=t[2];let i;t[3]!==r||t[4]!==n?(i=s.jsx("div",{className:"flex gap-2",children:o.map(m=>s.jsx("button",{onClick:()=>r(m),className:`w-8 h-8 text-xs rounded-full border ${n===m?"bg-[#c7a486] text-white border-[#c7a486]":"border-black/20 text-black/85"}`,children:m},m))}),t[3]=r,t[4]=n,t[5]=i):i=t[5];let c;return t[6]!==l||t[7]!==i?(c=s.jsxs("div",{className:"flex items-center justify-between gap-4",children:[l,i]}),t[6]=l,t[7]=i,t[8]=c):c=t[8],c},pe=e=>{const t=k.c(8),{label:a,checked:n,onChange:r}=e;let l;t[0]!==r?(l=c=>r(c.target.checked),t[0]=r,t[1]=l):l=t[1];let o;t[2]!==n||t[3]!==l?(o=s.jsx("input",{type:"checkbox",checked:n,onChange:l,className:"accent-[#c7a486]"}),t[2]=n,t[3]=l,t[4]=o):o=t[4];let i;return t[5]!==a||t[6]!==o?(i=s.jsxs("label",{className:"flex text-black items-center gap-3 text-sm cursor-pointer",children:[o,a]}),t[5]=a,t[6]=o,t[7]=i):i=t[7],i};function $e(e){return s.jsx("option",{children:e},e)}f.registerPlugin(ae);const Be=[{title:"Resources",href:"/resources"}];function Ge(){const e=k.c(4),t=x.useRef(null);let a,n;e[0]===Symbol.for("react.memo_cache_sentinel")?(a=()=>{const o=f.context(Ye,t);return()=>o.revert()},n=[],e[0]=a,e[1]=n):(a=e[0],n=e[1]),x.useEffect(a,n);let r;e[2]===Symbol.for("react.memo_cache_sentinel")?(r=s.jsx(ge,{title:"Resources"}),e[2]=r):r=e[2];let l;return e[3]===Symbol.for("react.memo_cache_sentinel")?(l=s.jsxs(be,{breadcrumbs:Be,children:[r,s.jsxs("main",{ref:t,className:"w-full overflow-hidden bg-white",children:[s.jsx(ve,{}),s.jsx(Ne,{}),s.jsx(_e,{}),s.jsx(Me,{}),s.jsx(qe,{})]})]}),e[3]=l):l=e[3],l}function Ye(){ae.refresh()}export{Ge as default};
+                    ${
+                      A
+                        ? "bg-brand text-white"
+                        : "border border-black/20 text-black/70 hover:bg-black/5"
+                    }
+                  `,
+                children: h,
+              },
+              h
+            );
+          }),
+        })),
+      (e[21] = l),
+      (e[22] = T),
+      (e[23] = w))
+    : (w = e[23]);
+  let j;
+  e[24] !== b.length
+    ? ((j =
+        b.length === 0 &&
+        s.jsx("p", {
+          className: "mt-8 text-center text-sm font-lato text-black/50",
+          children: "No FAQs found matching your search.",
+        })),
+      (e[24] = b.length),
+      (e[25] = j))
+    : (j = e[25]);
+  let N;
+  return (
+    e[26] !== E || e[27] !== y || e[28] !== w || e[29] !== j
+      ? ((N = s.jsx("section", {
+          ref: i,
+          className: de,
+          children: s.jsxs("div", { className: W, children: [E, y, w, j] }),
+        })),
+        (e[26] = E),
+        (e[27] = y),
+        (e[28] = w),
+        (e[29] = j),
+        (e[30] = N))
+      : (N = e[30]),
+    N
+  );
+}
+function Pe(e, t) {
+  return e.type === "paragraph"
+    ? s.jsx(
+        "p",
+        {
+          className:
+            "font-lato text-sm sm:text-base text-black/70 leading-relaxed",
+          children: e.text,
+        },
+        t
+      )
+    : e.type === "list"
+    ? s.jsx(
+        "ul",
+        {
+          className:
+            "list-disc pl-5 space-y-1 font-lato text-sm sm:text-base text-black/70",
+          children: e.items.map(Ee),
+        },
+        t
+      )
+    : null;
+}
+function Ee(e, t) {
+  return s.jsx("li", { children: e }, t);
+}
+const Te = [
+    "Hot flushes",
+    "Night sweats",
+    "Sleep problems",
+    "Fatigue / low energy",
+    "Brain fog / memory issues",
+    "Difficulty concentrating",
+    "Mood swings",
+    "Low mood or depression",
+    "Anxiety / panic",
+    "Irritability",
+    "Low libido",
+    "Vaginal dryness / discomfort",
+    "Pain during sex",
+    "Bladder issues",
+    "Joint or muscle pain",
+    "Headaches or migraines",
+    "Heart palpitations",
+    "Weight change",
+    "Hair or skin changes",
+    "Changes in menstrual cycle",
+  ],
+  He = [
+    "Work / productivity",
+    "Home / daily life",
+    "Relationships",
+    "Emotional wellbeing",
+    "Social life",
+    "Sleep quality",
+  ],
+  Ie = [
+    "Mood & emotional stability",
+    "Sleep improvement",
+    "Relieving hot flushes",
+    "Supporting intimacy & sex life",
+    "Brain fog / cognitive clarity",
+    "Weight, nutrition & metabolism",
+    "Pain & physical comfort",
+    "Overall energy & vitality",
+    "Bone & heart health",
+    "Understanding my stage of menopause",
+    "A plan from a menopause specialist",
+    "Community support / not feeling alone",
+  ],
+  Ae = [
+    "Specialist medical advice (HRT etc.)",
+    "Nutrition & supplements",
+    "Fitness & pelvic health",
+    "Mental wellbeing / CBT / coaching",
+    "Holistic therapies",
+    "Peer community conversations",
+    "Lifestyle programmes & education",
+  ];
+function qe() {
+  const e = k.c(76);
+  let t;
+  e[0] === Symbol.for("react.memo_cache_sentinel")
+    ? ((t = { name: "", date: "", age: "", menstrualStatus: "" }), (e[0] = t))
+    : (t = e[0]);
+  const [a, n] = x.useState(t);
+  let r;
+  e[1] === Symbol.for("react.memo_cache_sentinel")
+    ? ((r = {}), (e[1] = r))
+    : (r = e[1]);
+  const [l, o] = x.useState(r);
+  let i;
+  e[2] === Symbol.for("react.memo_cache_sentinel")
+    ? ((i = {}), (e[2] = i))
+    : (i = e[2]);
+  const [c, m] = x.useState(i);
+  let p;
+  e[3] === Symbol.for("react.memo_cache_sentinel")
+    ? ((p = {
+        earlyMenopause: !1,
+        anxietyDepression: !1,
+        thyroid: !1,
+        smoker: !1,
+        hysterectomy: !1,
+        hrt: !1,
+        contraception: !1,
+      }),
+      (e[3] = p))
+    : (p = e[3]);
+  const [u, b] = x.useState(p),
+    [T, me] = x.useState("");
+  let C;
+  e[4] === Symbol.for("react.memo_cache_sentinel")
+    ? ((C = []), (e[4] = C))
+    : (C = e[4]);
+  const [M, de] = x.useState(C);
+  let W;
+  e[5] === Symbol.for("react.memo_cache_sentinel")
+    ? ((W = []), (e[5] = W))
+    : (W = e[5]);
+  const [P, O] = x.useState(W),
+    [H, L] = x.useState("");
+  let v;
+  e[6] !== l
+    ? ((v = Object.values(l).reduce(Oe, 0)), (e[6] = l), (e[7] = v))
+    : (v = e[7]);
+  const I = v,
+    E = We;
+  let $;
+  e[8] === Symbol.for("react.memo_cache_sentinel")
+    ? (($ = s.jsxs("div", {
+        className: "flex flex-col items-center gap-4 mb-14 text-center",
+        children: [
+          s.jsx(ce, { className: "w-5 h-5 text-brand" }),
+          s.jsx("p", {
+            className:
+              "font-lato text-xs uppercase tracking-widest text-brand opacity-75",
+            children: "MENOPAUSE SYMPTOM TRACKER",
+          }),
+          s.jsx("h2", {
+            className:
+              "font-lora text-black text-2xl sm:text-3xl lg:text-4xl max-w-2xl",
+            children: "Understand Your Symptoms. Take Control.",
+          }),
+          s.jsx("p", {
+            className: "font-lato text-sm text-black/70 max-w-3xl",
+            children:
+              "Track symptoms, understand their impact, and build a clearer picture of what support you may need — all in one place.",
+          }),
+        ],
+      })),
+      (e[8] = $))
+    : ($ = e[8]);
+  let S;
+  e[9] !== a
+    ? ((S = (d) => n({ ...a, name: d })), (e[9] = a), (e[10] = S))
+    : (S = e[10]);
+  let _;
+  e[11] !== a.name || e[12] !== S
+    ? ((_ = s.jsx(ie, {
+        label: "Name",
+        value: a.name,
+        placeholder: "eg: Jhon Doe",
+        onChange: S,
+      })),
+      (e[11] = a.name),
+      (e[12] = S),
+      (e[13] = _))
+    : (_ = e[13]);
+  let y;
+  e[14] !== a
+    ? ((y = (d) => n({ ...a, date: d })), (e[14] = a), (e[15] = y))
+    : (y = e[15]);
+  let w;
+  e[16] !== a.date || e[17] !== y
+    ? ((w = s.jsx(ie, {
+        label: "Date",
+        type: "date",
+        value: a.date,
+        onChange: y,
+      })),
+      (e[16] = a.date),
+      (e[17] = y),
+      (e[18] = w))
+    : (w = e[18]);
+  let j;
+  e[19] !== a
+    ? ((j = (d) => n({ ...a, age: d })), (e[19] = a), (e[20] = j))
+    : (j = e[20]);
+  let N;
+  e[21] !== a.age || e[22] !== j
+    ? ((N = s.jsx(ie, {
+        label: "Age",
+        type: "number",
+        value: a.age,
+        placeholder: "eg: 21",
+        onChange: j,
+      })),
+      (e[21] = a.age),
+      (e[22] = j),
+      (e[23] = N))
+    : (N = e[23]);
+  let g;
+  e[24] === Symbol.for("react.memo_cache_sentinel")
+    ? ((g = [
+        "Regular periods",
+        "Irregular periods",
+        "No periods (12+ months)",
+      ]),
+      (e[24] = g))
+    : (g = e[24]);
+  let R;
+  e[25] !== a
+    ? ((R = (d) => n({ ...a, menstrualStatus: d })), (e[25] = a), (e[26] = R))
+    : (R = e[26]);
+  let h;
+  e[27] !== a.menstrualStatus || e[28] !== R
+    ? ((h = s.jsx(Le, {
+        label: "Menstrual Status",
+        options: g,
+        value: a.menstrualStatus,
+        onChange: R,
+      })),
+      (e[27] = a.menstrualStatus),
+      (e[28] = R),
+      (e[29] = h))
+    : (h = e[29]);
+  let A;
+  e[30] !== w || e[31] !== N || e[32] !== h || e[33] !== _
+    ? ((A = s.jsxs(te, {
+        title: "Personal Information",
+        children: [_, w, N, h],
+      })),
+      (e[30] = w),
+      (e[31] = N),
+      (e[32] = h),
+      (e[33] = _),
+      (e[34] = A))
+    : (A = e[34]);
+  let B;
+  e[35] !== l
+    ? ((B = Te.map((d) =>
+        s.jsx(
+          xe,
+          { label: d, value: l[d], onChange: (q) => o({ ...l, [d]: q }) },
+          d
+        )
+      )),
+      (e[35] = l),
+      (e[36] = B))
+    : (B = e[36]);
+  let Y;
+  e[37] !== I
+    ? ((Y = s.jsxs("p", {
+        className: "text-sm text-black/70 mt-4",
+        children: [
+          "Total Symptom Score: ",
+          s.jsxs("b", { children: [I, " / 60"] }),
+        ],
+      })),
+      (e[37] = I),
+      (e[38] = Y))
+    : (Y = e[38]);
+  let F;
+  e[39] !== B || e[40] !== Y
+    ? ((F = s.jsxs(te, {
+        title: "Symptom Rating (Past 4 Weeks)",
+        children: [B, Y],
+      })),
+      (e[39] = B),
+      (e[40] = Y),
+      (e[41] = F))
+    : (F = e[41]);
+  let D;
+  e[42] !== c
+    ? ((D = He.map((d) =>
+        s.jsx(
+          xe,
+          { label: d, value: c[d], onChange: (q) => m({ ...c, [d]: q }) },
+          d
+        )
+      )),
+      (e[42] = c),
+      (e[43] = D))
+    : (D = e[43]);
+  let U;
+  e[44] !== D
+    ? ((U = s.jsx(te, { title: "Life Impact Assessment", children: D })),
+      (e[44] = D),
+      (e[45] = U))
+    : (U = e[45]);
+  let V;
+  e[46] !== u
+    ? ((V = Object.entries(u)), (e[46] = u), (e[47] = V))
+    : (V = e[47]);
+  let Q;
+  e[48] !== u || e[49] !== V
+    ? ((Q = V.map((d) => {
+        const [q, he] = d;
+        return s.jsx(
+          pe,
+          {
+            label: q.replace(/([A-Z])/g, " $1"),
+            checked: he,
+            onChange: (fe) => b({ ...u, [q]: fe }),
+          },
+          q
+        );
+      })),
+      (e[48] = u),
+      (e[49] = V),
+      (e[50] = Q))
+    : (Q = e[50]);
+  let le;
+  e[51] === Symbol.for("react.memo_cache_sentinel")
+    ? ((le = (d) => me(d.target.value)), (e[51] = le))
+    : (le = e[51]);
+  let G;
+  e[52] !== T
+    ? ((G = s.jsx("textarea", {
+        className:
+          "mt-4 w-full text-black/85 rounded-xl border border-black/10 p-4 text-sm",
+        placeholder: "Other medical conditions or medications...",
+        value: T,
+        onChange: le,
+      })),
+      (e[52] = T),
+      (e[53] = G))
+    : (G = e[53]);
+  let J;
+  e[54] !== Q || e[55] !== G
+    ? ((J = s.jsxs(te, {
+        title: "Medical & Personal History",
+        children: [Q, G],
+      })),
+      (e[54] = Q),
+      (e[55] = G),
+      (e[56] = J))
+    : (J = e[56]);
+  let z;
+  e[57] !== M
+    ? ((z = Ie.map((d) =>
+        s.jsx(
+          pe,
+          { label: d, checked: M.includes(d), onChange: () => E(d, M, de, 3) },
+          d
+        )
+      )),
+      (e[57] = M),
+      (e[58] = z))
+    : (z = e[58]);
+  let K;
+  e[59] !== H
+    ? ((K = s.jsx(ie, {
+        label: "Other",
+        value: H,
+        onChange: L,
+        placeholder: "Write Other Info Here...",
+      })),
+      (e[59] = H),
+      (e[60] = K))
+    : (K = e[60]);
+  let Z;
+  e[61] !== z || e[62] !== K
+    ? ((Z = s.jsxs(te, {
+        title: "What Matters Most Right Now (Select up to 3)",
+        children: [z, K],
+      })),
+      (e[61] = z),
+      (e[62] = K),
+      (e[63] = Z))
+    : (Z = e[63]);
+  let X;
+  e[64] !== P
+    ? ((X = Ae.map((d) =>
+        s.jsx(
+          pe,
+          { label: d, checked: P.includes(d), onChange: () => E(d, P, O) },
+          d
+        )
+      )),
+      (e[64] = P),
+      (e[65] = X))
+    : (X = e[65]);
+  let ee;
+  e[66] !== X
+    ? ((ee = s.jsx(te, { title: "Preferred Types of Support", children: X })),
+      (e[66] = X),
+      (e[67] = ee))
+    : (ee = e[67]);
+  let ne;
+  e[68] === Symbol.for("react.memo_cache_sentinel")
+    ? ((ne = s.jsx("div", {
+        className: "mt-14 flex justify-center",
+        children: s.jsx(ue, { label: "Submit Tracker" }),
+      })),
+      (e[68] = ne))
+    : (ne = e[68]);
+  let re;
+  return (
+    e[69] !== A ||
+    e[70] !== F ||
+    e[71] !== U ||
+    e[72] !== J ||
+    e[73] !== Z ||
+    e[74] !== ee
+      ? ((re = s.jsx("section", {
+          className: "w-full bg-white py-16",
+          children: s.jsxs("div", {
+            className: "mx-auto max-w-7xl px-6 lg:px-16",
+            children: [$, A, F, U, J, Z, ee, ne],
+          }),
+        })),
+        (e[69] = A),
+        (e[70] = F),
+        (e[71] = U),
+        (e[72] = J),
+        (e[73] = Z),
+        (e[74] = ee),
+        (e[75] = re))
+      : (re = e[75]),
+    re
+  );
+}
+function We(e, t, a, n) {
+  t.includes(e)
+    ? a(t.filter((r) => r !== e))
+    : (!n || t.length < n) && a([...t, e]);
+}
+function Oe(e, t) {
+  return e + t;
+}
+const te = (e) => {
+    const t = k.c(7),
+      { title: a, children: n } = e;
+    let r;
+    t[0] !== a
+      ? ((r = s.jsx("h3", {
+          className: "font-lora text-xl mb-6 text-black",
+          children: a,
+        })),
+        (t[0] = a),
+        (t[1] = r))
+      : (r = t[1]);
+    let l;
+    t[2] !== n
+      ? ((l = s.jsx("div", { className: "grid gap-4", children: n })),
+        (t[2] = n),
+        (t[3] = l))
+      : (l = t[3]);
+    let o;
+    return (
+      t[4] !== r || t[5] !== l
+        ? ((o = s.jsxs("div", { className: "mb-14", children: [r, l] })),
+          (t[4] = r),
+          (t[5] = l),
+          (t[6] = o))
+        : (o = t[6]),
+      o
+    );
+  },
+  ie = (e) => {
+    const t = k.c(12),
+      { label: a, value: n, onChange: r, type: l, placeholder: o } = e,
+      i = l === void 0 ? "text" : l;
+    let c;
+    t[0] !== a
+      ? ((c = s.jsx("label", {
+          className: "text-sm text-black/70",
+          children: a,
+        })),
+        (t[0] = a),
+        (t[1] = c))
+      : (c = t[1]);
+    let m;
+    t[2] !== r
+      ? ((m = (b) => r(b.target.value)), (t[2] = r), (t[3] = m))
+      : (m = t[3]);
+    let p;
+    t[4] !== o || t[5] !== m || t[6] !== i || t[7] !== n
+      ? ((p = s.jsx("input", {
+          type: i,
+          value: n,
+          onChange: m,
+          placeholder: o,
+          className:
+            "mt-1 w-full text-black/85 rounded-xl border border-black/10 px-4 py-2 text-sm",
+        })),
+        (t[4] = o),
+        (t[5] = m),
+        (t[6] = i),
+        (t[7] = n),
+        (t[8] = p))
+      : (p = t[8]);
+    let u;
+    return (
+      t[9] !== c || t[10] !== p
+        ? ((u = s.jsxs("div", { children: [c, p] })),
+          (t[9] = c),
+          (t[10] = p),
+          (t[11] = u))
+        : (u = t[11]),
+      u
+    );
+  },
+  Le = (e) => {
+    const t = k.c(14),
+      { label: a, options: n, value: r, onChange: l } = e;
+    let o;
+    t[0] !== a
+      ? ((o = s.jsx("label", {
+          className: "text-sm text-black/70",
+          children: a,
+        })),
+        (t[0] = a),
+        (t[1] = o))
+      : (o = t[1]);
+    let i;
+    t[2] !== l
+      ? ((i = (b) => l(b.target.value)), (t[2] = l), (t[3] = i))
+      : (i = t[3]);
+    let c;
+    t[4] === Symbol.for("react.memo_cache_sentinel")
+      ? ((c = s.jsx("option", { value: "", children: "Select" })), (t[4] = c))
+      : (c = t[4]);
+    let m;
+    t[5] !== n ? ((m = n.map($e)), (t[5] = n), (t[6] = m)) : (m = t[6]);
+    let p;
+    t[7] !== i || t[8] !== m || t[9] !== r
+      ? ((p = s.jsxs("select", {
+          value: r,
+          onChange: i,
+          className:
+            "mt-1 w-full rounded-xl text-black/85 border border-black/10 px-4 py-2 text-sm",
+          children: [c, m],
+        })),
+        (t[7] = i),
+        (t[8] = m),
+        (t[9] = r),
+        (t[10] = p))
+      : (p = t[10]);
+    let u;
+    return (
+      t[11] !== o || t[12] !== p
+        ? ((u = s.jsxs("div", { children: [o, p] })),
+          (t[11] = o),
+          (t[12] = p),
+          (t[13] = u))
+        : (u = t[13]),
+      u
+    );
+  },
+  xe = (e) => {
+    const t = k.c(9),
+      { label: a, value: n, onChange: r } = e;
+    let l;
+    t[0] !== a
+      ? ((l = s.jsx("span", {
+          className: "text-sm text-black/80",
+          children: a,
+        })),
+        (t[0] = a),
+        (t[1] = l))
+      : (l = t[1]);
+    let o;
+    t[2] === Symbol.for("react.memo_cache_sentinel")
+      ? ((o = [0, 1, 2, 3]), (t[2] = o))
+      : (o = t[2]);
+    let i;
+    t[3] !== r || t[4] !== n
+      ? ((i = s.jsx("div", {
+          className: "flex gap-2",
+          children: o.map((m) =>
+            s.jsx(
+              "button",
+              {
+                onClick: () => r(m),
+                className: `w-8 h-8 text-xs rounded-full border ${
+                  n === m
+                    ? "bg-brand text-white border-brand"
+                    : "border-black/20 text-black/85"
+                }`,
+                children: m,
+              },
+              m
+            )
+          ),
+        })),
+        (t[3] = r),
+        (t[4] = n),
+        (t[5] = i))
+      : (i = t[5]);
+    let c;
+    return (
+      t[6] !== l || t[7] !== i
+        ? ((c = s.jsxs("div", {
+            className: "flex items-center justify-between gap-4",
+            children: [l, i],
+          })),
+          (t[6] = l),
+          (t[7] = i),
+          (t[8] = c))
+        : (c = t[8]),
+      c
+    );
+  },
+  pe = (e) => {
+    const t = k.c(8),
+      { label: a, checked: n, onChange: r } = e;
+    let l;
+    t[0] !== r
+      ? ((l = (c) => r(c.target.checked)), (t[0] = r), (t[1] = l))
+      : (l = t[1]);
+    let o;
+    t[2] !== n || t[3] !== l
+      ? ((o = s.jsx("input", {
+          type: "checkbox",
+          checked: n,
+          onChange: l,
+          className: "accent-brand",
+        })),
+        (t[2] = n),
+        (t[3] = l),
+        (t[4] = o))
+      : (o = t[4]);
+    let i;
+    return (
+      t[5] !== a || t[6] !== o
+        ? ((i = s.jsxs("label", {
+            className:
+              "flex text-black items-center gap-3 text-sm cursor-pointer",
+            children: [o, a],
+          })),
+          (t[5] = a),
+          (t[6] = o),
+          (t[7] = i))
+        : (i = t[7]),
+      i
+    );
+  };
+function $e(e) {
+  return s.jsx("option", { children: e }, e);
+}
+f.registerPlugin(ae);
+const Be = [{ title: "Resources", href: "/resources" }];
+function Ge() {
+  const e = k.c(4),
+    t = x.useRef(null);
+  let a, n;
+  e[0] === Symbol.for("react.memo_cache_sentinel")
+    ? ((a = () => {
+        const o = f.context(Ye, t);
+        return () => o.revert();
+      }),
+      (n = []),
+      (e[0] = a),
+      (e[1] = n))
+    : ((a = e[0]), (n = e[1])),
+    x.useEffect(a, n);
+  let r;
+  e[2] === Symbol.for("react.memo_cache_sentinel")
+    ? ((r = s.jsx(ge, { title: "Resources" })), (e[2] = r))
+    : (r = e[2]);
+  let l;
+  return (
+    e[3] === Symbol.for("react.memo_cache_sentinel")
+      ? ((l = s.jsxs(be, {
+          breadcrumbs: Be,
+          children: [
+            r,
+            s.jsxs("main", {
+              ref: t,
+              className: "w-full overflow-hidden bg-white",
+              children: [
+                s.jsx(ve, {}),
+                s.jsx(Ne, {}),
+                s.jsx(_e, {}),
+                s.jsx(Me, {}),
+                s.jsx(qe, {}),
+              ],
+            }),
+          ],
+        })),
+        (e[3] = l))
+      : (l = e[3]),
+    l
+  );
+}
+function Ye() {
+  ae.refresh();
+}
+export { Ge as default };

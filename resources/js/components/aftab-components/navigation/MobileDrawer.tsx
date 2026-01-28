@@ -54,7 +54,7 @@ export default function MobileDrawer({ open, onClose, links }: Props) {
 
         {/* CTA */}
         <div className="mt-auto">
-          <button className="w-full rounded-full bg-[#c7a486] text-white py-3 text-xs uppercase tracking-wider">
+          <button className="w-full rounded-full bg-brand text-white py-3 text-xs uppercase tracking-wider">
             Contact Us
           </button>
         </div>

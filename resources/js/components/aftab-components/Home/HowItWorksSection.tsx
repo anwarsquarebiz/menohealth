@@ -92,7 +92,7 @@ export default function HowItWorksSection() {
           {/* Icon */}
           <div className="flex flex-col items-center gap-6">
             <Heart className="w-5 h-5 text-brand" />
-            <p className="font-lato font-semibold text-[#c7a486] text-xs tracking-widest uppercase opacity-75">
+            <p className="font-lato font-semibold text-brand text-xs tracking-widest uppercase opacity-75">
               How It Works
             </p>
           </div>
@@ -116,7 +116,7 @@ export default function HowItWorksSection() {
               <path
                 ref={pathRef}
                 d={svgPaths.p2f4bbf00}
-                stroke="#C7A486"
+                stroke="#587974"
                 strokeLinecap="round"
                 strokeWidth="3"
                 fill="none"
@@ -137,7 +137,7 @@ export default function HowItWorksSection() {
                 } justify-center`}
               >
                 <div className="flex flex-col gap-4 bg-white px-6 py-8 max-w-md text-center lg:text-left">
-                  <div className="bg-[#c7a486] rounded-full px-3 py-1 flex items-center gap-2 w-fit mx-auto lg:mx-0">
+                  <div className="bg-brand rounded-full px-3 py-1 flex items-center gap-2 w-fit mx-auto lg:mx-0">
                     <div className="w-1.5 h-1.5 bg-white rounded-full" />
                     <span className="font-lato text-white text-xs uppercase">
                       Step {step.number}

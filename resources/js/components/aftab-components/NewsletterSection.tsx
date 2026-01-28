@@ -28,7 +28,7 @@ export default function NewsletterSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full bg-brand md:flex md:gap-10 md:justify-between py-10 xl:py-16 px-4 md:px-8 lg:px-16 overflow-hidden"
+      className="relative w-full bg-gradient-to-br from-brand to-[#D5D5AF] md:flex md:gap-10 md:justify-between py-10 xl:py-16 px-4 md:px-8 lg:px-16 overflow-hidden"
     >
       {/* Background Moon/Circle Decoration */}
       {/* <div className="absolute right-[10%] top-1/2 -translate-y-1/2 w-[200px] h-[200px] bg-white/20 rounded-full blur-3xl" /> */}

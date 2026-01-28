@@ -410,9 +410,9 @@ export default function FAQSection() {
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
         {/* Heading */}
         <div className="faq-heading flex flex-col items-center gap-4 mb-12 text-center">
-          <Heart className="w-5 h-5 text-[#c7a486]" />
+          <Heart className="w-5 h-5 text-brand" />
 
-          <p className="font-lato text-xs uppercase tracking-widest text-[#c7a486] opacity-75">
+          <p className="font-lato text-xs uppercase tracking-widest text-brand opacity-75">
             FREQUENTLY ASKED QUESTIONS
           </p>
 
@@ -430,7 +430,7 @@ export default function FAQSection() {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="flex-1 px-6 py-3 font-lato text-sm border border-black/20 rounded-full md:border-none md:rounded-none text-black/85 bg-transparent focus:outline-none"
               />
-              <button className="bg-[#c7a486]/70 hover:bg-[#c7a486] rounded-full md:rounded-none transition-colors px-6 py-3 text-sm font-lato text-white">
+              <button className="bg-brand/70 hover:bg-brand rounded-full md:rounded-none transition-colors px-6 py-3 text-sm font-lato text-white">
                 Search
               </button>
             </div>
@@ -456,7 +456,7 @@ export default function FAQSection() {
   "
             >
               {/* Category */}
-              <span className="text-[10px] uppercase tracking-widest text-[#c7a486] font-lato">
+              <span className="text-[10px] uppercase tracking-widest text-brand font-lato">
                 {faq.category}
               </span>
 
@@ -491,7 +491,7 @@ export default function FAQSection() {
                     h-[30px] aspect-square rounded-full text-sm font-lato transition
                     ${
                       isActive
-                        ? "bg-[#c7a486] text-white"
+                        ? "bg-brand text-white"
                         : "border border-black/20 text-black/70 hover:bg-black/5"
                     }
                   `}

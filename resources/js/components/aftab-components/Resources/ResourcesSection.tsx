@@ -83,8 +83,8 @@ export default function ResourcesSection() {
       <div className="mx-auto max-w-7xl px-6">
         {/* Heading */}
         <div className="resources-heading flex flex-col items-center gap-4 mb-12 text-center">
-          <Heart className="w-5 h-5 text-[#c7a486]" />
-          <p className="font-lato text-xs uppercase tracking-widest text-[#c7a486] opacity-75">
+          <Heart className="w-5 h-5 text-brand" />
+          <p className="font-lato text-xs uppercase tracking-widest text-brand opacity-75">
             CURATED CONTENT
           </p>
 
@@ -114,7 +114,7 @@ export default function ResourcesSection() {
                   </div>
                 </div>
 
-                {/* <button className="mt-6 bg-[#c7a486] hover:bg-[#b89476] transition-colors text-white px-5 py-2.5 rounded-full flex items-center gap-4 w-fit">
+                {/* <button className="mt-6 bg-brand hover:bg-[#b89476] transition-colors text-white px-5 py-2.5 rounded-full flex items-center gap-4 w-fit">
                   <span className="text-xs">View Now</span>
                   <span className="w-1.5 h-1.5 bg-white rounded-full" />
                 </button> */}

@@ -85,7 +85,7 @@ export default function Navbar() {
           text-xs uppercase tracking-widest transition-colors
           ${
             isActive
-              ? "text-[#587974] font-semibold"
+              ? "text-brand font-semibold"
               : "text-black/60 hover:text-black"
           }
         `}
