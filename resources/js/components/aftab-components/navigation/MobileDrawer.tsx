@@ -7,7 +7,7 @@ interface Props {
   onClose: () => void;
 }
 
-export default function MobileDrawer({ open, onClose }: Props) {
+export default function MobileDrawer({ open, onClose, links }: Props) {
   const drawerRef = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
@@ -40,21 +40,21 @@ export default function MobileDrawer({ open, onClose }: Props) {
 
         {/* Links */}
         <nav className="flex flex-col gap-6">
-          {["Services", "About", "Blog"].map((item) => (
+          {links.map((item, index) => (
             <a
-              key={item}
-              href="#"
+              key={index}
+              href={item.path}
               className="font-lora text-lg text-black"
               onClick={onClose}
             >
-              {item}
+              {item.name}
             </a>
           ))}
         </nav>
 
         {/* CTA */}
         <div className="mt-auto">
-          <button className="w-full rounded-full bg-[#c7a486] text-white py-3 text-xs uppercase tracking-wider">
+          <button className="w-full rounded-full bg-brand text-white py-3 text-xs uppercase tracking-wider">
             Contact Us
           </button>
         </div>

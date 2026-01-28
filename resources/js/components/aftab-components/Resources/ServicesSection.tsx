@@ -1,43 +1,59 @@
 import React, { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Heart } from "lucide-react";
+import {
+  Heart,
+  Moon,
+  Zap,
+  Dumbbell,
+  Brain,
+  Sparkles,
+  Compass,
+  Leaf,
+} from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const services = [
   {
     title: "Sleep & Nutrition",
+    icon: <Moon />,
     description:
       "Tailored plans to help manage sleep disruption, hot flashes, and nutrition for energy and wellbeing.",
   },
   {
     title: "Energy & Libido",
+    icon: <Zap />,
     description:
       "Supportive guidance for managing fatigue, hormonal changes, and maintaining intimacy during menopause.",
   },
   {
     title: "Fitness",
+    icon: <Dumbbell />,
     description:
       "Exercise programs designed for strength, bone health, and overall vitality through midlife.",
   },
   {
     title: "Stress & Mindset",
+    icon: <Brain />,
     description:
       "Tools and techniques to manage stress, support mental clarity, and build emotional resilience.",
   },
   {
     title: "Yoga & Meditation",
+    icon: <Leaf />,
     description:
       "Mind–body practices designed to reduce stress, improve sleep, and support hormonal balance.",
   },
   {
     title: "Beauty & Skincare",
+    icon: <Sparkles />,
     description:
       "Menopause-aware skincare and beauty services that support changing skin needs with confidence.",
   },
   {
     title: "Coaching",
+    icon: <Compass />,
     description:
       "One-on-one support to help women navigate menopause with confidence, clarity, and purpose.",
   },
@@ -85,8 +101,8 @@ export default function ServicesSection() {
         {/* Heading */}
         <div className="services-heading flex flex-col items-center gap-4 mb-12 text-center">
           <div className="flex flex-col items-center gap-4">
-            <Heart className="w-5 h-5 text-[#c7a486]" />
-            <p className="font-lato text-xs uppercase tracking-widest text-[#c7a486] opacity-75">
+            <Heart className="w-5 h-5 text-brand" />
+            <p className="font-lato text-xs uppercase tracking-widest text-brand opacity-75">
               OUR SERVICES
             </p>
           </div>
@@ -106,7 +122,7 @@ export default function ServicesSection() {
         <div
           ref={cardsRef}
           className="
-            grid gap-6
+            grid gap-3
             grid-cols-1
             md:grid-cols-2
             lg:grid-cols-3
@@ -116,20 +132,27 @@ export default function ServicesSection() {
             <div
               key={index}
               className="
-                service-card
-                border border-black/10
-                rounded-xl
-                p-6 sm:p-8
-                bg-white
-                flex flex-col gap-3
-              "
+      service-card
+      border border-black/10
+      rounded-xls
+      p-6 sm:p-8
+      bg-white
+      flex flex-col gap-4
+      rounded-lg
+    "
             >
-              <h3 className="font-lora text-lg sm:text-xl text-black">
-                {service.title}
-              </h3>
-              <p className="font-lato text-sm sm:text-base text-black/85 leading-relaxed">
-                {service.description}
-              </p>
+              {/* ICON */}
+              <div className="text-black/80">{service.icon}</div>
+
+              <div className="flex flex-col gap-1">
+                <h3 className="font-lora text-lg sm:text-xl text-black">
+                  {service.title}
+                </h3>
+
+                <p className="font-lato text-sm sm:text-base text-black/85 leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

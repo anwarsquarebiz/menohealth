@@ -132,8 +132,8 @@ export default function MenopauseTrackerSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-16">
         {/* ---------- HEADER ---------- */}
         <div className="flex flex-col items-center gap-4 mb-14 text-center">
-          <Heart className="w-5 h-5 text-[#c7a486]" />
-          <p className="font-lato text-xs uppercase tracking-widest text-[#c7a486] opacity-75">
+          <Heart className="w-5 h-5 text-brand" />
+          <p className="font-lato text-xs uppercase tracking-widest text-brand opacity-75">
             MENOPAUSE SYMPTOM TRACKER
           </p>
           <h2 className="font-lora text-black text-2xl sm:text-3xl lg:text-4xl max-w-2xl">
@@ -272,7 +272,7 @@ export default function MenopauseTrackerSection() {
         <div className="mt-14 flex justify-center">
           {/* <button
             onClick={handleSubmit}
-            className="rounded-full bg-[#c7a486] px-10 py-3 text-sm font-lato uppercase tracking-widest text-white hover:bg-[#b89476] transition"
+            className="rounded-full bg-brand px-10 py-3 text-sm font-lato uppercase tracking-widest text-white hover:bg-[#b89476] transition"
           >
             Submit Tracker
           </button> */}
@@ -331,7 +331,7 @@ const RatingRow = ({ label, value, onChange }: any) => (
           onClick={() => onChange(n)}
           className={`w-8 h-8 text-xs rounded-full border ${
             value === n
-              ? "bg-[#c7a486] text-white border-[#c7a486]"
+              ? "bg-brand text-white border-brand"
               : "border-black/20 text-black/85"
           }`}
         >
@@ -348,7 +348,7 @@ const Checkbox = ({ label, checked, onChange }: any) => (
       type="checkbox"
       checked={checked}
       onChange={(e) => onChange(e.target.checked)}
-      className="accent-[#c7a486]"
+      className="accent-brand"
     />
     {label}
   </label>

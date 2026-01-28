@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { Menu, X } from "lucide-react";
 import MobileDrawer from "./MobileDrawer";
 import CustomBtn from "../CustomBtn";
-import { router } from "@inertiajs/react";
+import { router, usePage } from "@inertiajs/react";
 
 const nav = [
   {
@@ -22,6 +22,8 @@ const nav = [
 ];
 
 export default function Navbar() {
+  const { url } = usePage();
+
   const navRef = useRef<HTMLElement>(null);
   const [open, setOpen] = useState(false);
   useLayoutEffect(() => {
@@ -73,15 +75,25 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-10">
-            {nav.map((item) => (
-              <a
-                key={item}
-                href={item.path}
-                className="text-black/60 text-xs uppercase tracking-widest hover:text-black transition-colors"
-              >
-                {item.name}
-              </a>
-            ))}
+            {nav.map((item) => {
+              const isActive = url === item.path;
+              return (
+                <a
+                  key={item}
+                  href={item.path}
+                  className={`
+          text-xs uppercase tracking-widest transition-colors
+          ${
+            isActive
+              ? "text-brand font-semibold"
+              : "text-black/60 hover:text-black"
+          }
+        `}
+                >
+                  {item.name}
+                </a>
+              );
+            })}
 
             <div className="ml-8">
               <CustomBtn label="Contact Us" onClick={handleContactClick} />
@@ -99,7 +111,7 @@ export default function Navbar() {
       </header>
 
       {/* Mobile Drawer */}
-      <MobileDrawer open={open} onClose={() => setOpen(false)} />
+      <MobileDrawer open={open} onClose={() => setOpen(false)} links={nav} />
     </>
   );
 }

@@ -9,6 +9,7 @@ const ITEMS_PER_PAGE = 6;
 
 const faqs = [
   {
+    category: "Basics",
     question: "What is menopause?",
     answer: [
       {
@@ -18,8 +19,8 @@ const faqs = [
       },
     ],
   },
-
   {
+    category: "Basics",
     question: "What is peri-menopause?",
     answer: [
       {
@@ -29,8 +30,8 @@ const faqs = [
       },
     ],
   },
-
   {
+    category: "Basics",
     question: "When does menopause usually start?",
     answer: [
       {
@@ -44,14 +45,11 @@ const faqs = [
       },
     ],
   },
-
   {
+    category: "Symptoms",
     question: "What are the most common symptoms?",
     answer: [
-      {
-        type: "paragraph",
-        text: "Symptoms vary but commonly include:",
-      },
+      { type: "paragraph", text: "Symptoms vary but commonly include:" },
       {
         type: "list",
         items: [
@@ -71,8 +69,8 @@ const faqs = [
       },
     ],
   },
-
   {
+    category: "Symptoms",
     question: "How long does menopause last?",
     answer: [
       {
@@ -84,8 +82,8 @@ const faqs = [
       },
     ],
   },
-
   {
+    category: "Diagnosis",
     question: "How is menopause diagnosed?",
     answer: [
       {
@@ -97,8 +95,8 @@ const faqs = [
       },
     ],
   },
-
   {
+    category: "Basics",
     question: "What is post-menopause?",
     answer: [
       {
@@ -108,14 +106,11 @@ const faqs = [
       },
     ],
   },
-
   {
+    category: "Treatment",
     question: "What treatments are available?",
     answer: [
-      {
-        type: "paragraph",
-        text: "Options include:",
-      },
+      { type: "paragraph", text: "Options include:" },
       {
         type: "list",
         items: [
@@ -134,8 +129,8 @@ const faqs = [
       },
     ],
   },
-
   {
+    category: "Treatment",
     question: "What is HRT and how does it help?",
     answer: [
       {
@@ -161,14 +156,11 @@ const faqs = [
       },
     ],
   },
-
   {
+    category: "Health & Lifestyle",
     question: "Is menopause linked to mental health issues?",
     answer: [
-      {
-        type: "paragraph",
-        text: "Yes — hormonal changes can affect:",
-      },
+      { type: "paragraph", text: "Yes — hormonal changes can affect:" },
       {
         type: "list",
         items: [
@@ -185,8 +177,8 @@ const faqs = [
       },
     ],
   },
-
   {
+    category: "Health & Lifestyle",
     question: "Can menopause affect sex and intimacy?",
     answer: [
       {
@@ -201,14 +193,11 @@ const faqs = [
       },
     ],
   },
-
   {
+    category: "Health & Lifestyle",
     question: "Does menopause increase health risks?",
     answer: [
-      {
-        type: "paragraph",
-        text: "Lower oestrogen can impact:",
-      },
+      { type: "paragraph", text: "Lower oestrogen can impact:" },
       {
         type: "list",
         items: [
@@ -224,8 +213,8 @@ const faqs = [
       },
     ],
   },
-
   {
+    category: "Diagnosis",
     question: "Can early or surgical menopause cause different symptoms?",
     answer: [
       {
@@ -235,8 +224,8 @@ const faqs = [
       },
     ],
   },
-
   {
+    category: "Health & Lifestyle",
     question: "What lifestyle changes help symptoms?",
     answer: [
       {
@@ -256,14 +245,11 @@ const faqs = [
       },
     ],
   },
-
   {
+    category: "Support",
     question: "Where can I get help?",
     answer: [
-      {
-        type: "paragraph",
-        text: "You can speak to:",
-      },
+      { type: "paragraph", text: "You can speak to:" },
       {
         type: "list",
         items: [
@@ -278,9 +264,14 @@ const faqs = [
 ];
 
 export default function FAQSection() {
+  const answerRefs = useRef([]);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
+
+  const [activeFAQ, setActiveFAQ] = useState(null);
+  const modalRef = useRef(null);
+  const overlayRef = useRef(null);
 
   const sectionRef = useRef<HTMLElement>(null);
   const faqsRef = useRef<HTMLDivElement>(null);
@@ -331,20 +322,97 @@ export default function FAQSection() {
     currentPage * ITEMS_PER_PAGE
   );
 
+  const toggleFAQ = (index) => {
+    const el = answerRefs.current[index];
+
+    if (!el) return;
+
+    if (openIndex === index) {
+      // CLOSE
+      gsap.to(el, {
+        height: 0,
+        opacity: 0,
+        duration: 0.35,
+        ease: "power2.inOut",
+      });
+      setOpenIndex(null);
+    } else {
+      // CLOSE PREVIOUS
+      if (openIndex !== null) {
+        const prev = answerRefs.current[openIndex];
+        if (prev) {
+          gsap.to(prev, {
+            height: 0,
+            opacity: 0,
+            duration: 0.3,
+            ease: "power2.inOut",
+          });
+        }
+      }
+
+      // OPEN NEW
+      gsap.set(el, { height: "auto", opacity: 1 });
+      const height = el.offsetHeight;
+
+      gsap.fromTo(
+        el,
+        { height: 0, opacity: 0 },
+        {
+          height,
+          opacity: 1,
+          duration: 0.4,
+          ease: "power2.out",
+        }
+      );
+
+      setOpenIndex(index);
+    }
+  };
+
   /* Reset page when search changes */
   useEffect(() => {
     setCurrentPage(1);
     setOpenIndex(null);
   }, [searchQuery]);
 
+  useEffect(() => {
+    if (!activeFAQ) return;
+
+    gsap.fromTo(
+      modalRef.current,
+      { y: 30, opacity: 0, scale: 0.98 },
+      {
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        duration: 0.4,
+        ease: "power3.out",
+      }
+    );
+  }, [activeFAQ]);
+
+  useEffect(() => {
+    if (!activeFAQ) return;
+
+    gsap.fromTo(
+      overlayRef.current,
+      { opacity: 0 },
+      { opacity: 1, duration: 0.3 }
+    );
+  }, [activeFAQ]);
+
+  useEffect(() => {
+    document.body.style.overflow = activeFAQ ? "hidden" : "auto";
+  }, [activeFAQ]);
+
   return (
     <section ref={sectionRef} className="w-full bg-white py-16">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
         {/* Heading */}
         <div className="faq-heading flex flex-col items-center gap-4 mb-12 text-center">
-          <Heart className="w-5 h-5 text-[#c7a486]" />
+          <Heart className="w-5 h-5 text-brand" />
 
-          <p className="font-lato text-xs uppercase tracking-widest text-[#c7a486] opacity-75">
+          <p className="font-lato text-xs uppercase tracking-widest text-brand opacity-75">
             FREQUENTLY ASKED QUESTIONS
           </p>
 
@@ -354,15 +422,15 @@ export default function FAQSection() {
 
           {/* Search */}
           <div className="w-full max-w-xl mt-4">
-            <div className="flex flex-col sm:flex-row overflow-hidden rounded-full border border-black/20">
+            <div className="flex flex-col sm:flex-row gap-2 md:gap-0 md:overflow-hidden rounded-full md:border border-black/20">
               <input
                 type="text"
                 placeholder="Search here"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="flex-1 px-6 py-3 font-lato text-sm text-black/85 bg-transparent focus:outline-none"
+                className="flex-1 px-6 py-3 font-lato text-sm border border-black/20 rounded-full md:border-none md:rounded-none text-black/85 bg-transparent focus:outline-none"
               />
-              <button className="bg-[#c7a486]/70 hover:bg-[#c7a486] transition-colors px-6 py-3 text-sm font-lato text-white">
+              <button className="bg-brand/70 hover:bg-brand rounded-full md:rounded-none transition-colors px-6 py-3 text-sm font-lato text-white">
                 Search
               </button>
             </div>
@@ -370,67 +438,39 @@ export default function FAQSection() {
         </div>
 
         {/* FAQ List */}
-        <div ref={faqsRef} className="mx-auto max-w-3xl">
-          {paginatedFAQs.map((faq, index) => {
-            const realIndex = (currentPage - 1) * ITEMS_PER_PAGE + index;
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {paginatedFAQs.map((faq, index) => (
+            <button
+              onClick={() => setActiveFAQ(faq)}
+              className="
+    faq-card
+    border border-black/10
+    rounded-xl
+    p-6
+    text-left
+    bg-white
+    hover:bg-black/5
+    transition
+    flex flex-col justify-between
+    min-h-[150px]
+  "
+            >
+              {/* Category */}
+              <span className="text-[10px] uppercase tracking-widest text-brand font-lato">
+                {faq.category}
+              </span>
 
-            return (
-              <div
-                key={realIndex}
-                className="faq-item border-b border-black/10 last:border-none"
-              >
-                <button
-                  onClick={() =>
-                    setOpenIndex(openIndex === realIndex ? null : realIndex)
-                  }
-                  className="w-full py-5 sm:py-6 flex items-start justify-between gap-4 text-left hover:bg-black/5 transition rounded-md px-2 sm:px-4"
-                >
-                  <h3 className="font-lora text-base sm:text-lg text-black">
-                    {faq.question}
-                  </h3>
-                  <ChevronDown
-                    className={`w-5 h-5 text-[#c7a486] transition-transform ${
-                      openIndex === realIndex ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
+              {/* Question */}
+              <h3 className="mt-3 font-lora text-base sm:text-lg text-black leading-snug">
+                {faq.question}
+              </h3>
 
-                {openIndex === realIndex && (
-                  <div className="px-2 sm:px-4 pb-6">
-                    <div className="flex flex-col gap-3">
-                      {faq.answer.map((block, i) => {
-                        if (block.type === "paragraph") {
-                          return (
-                            <p
-                              key={i}
-                              className="font-lato text-sm sm:text-base text-black/70 leading-relaxed"
-                            >
-                              {block.text}
-                            </p>
-                          );
-                        }
-
-                        if (block.type === "list") {
-                          return (
-                            <ul
-                              key={i}
-                              className="list-disc pl-5 space-y-1 font-lato text-sm sm:text-base text-black/70"
-                            >
-                              {block.items.map((item, idx) => (
-                                <li key={idx}>{item}</li>
-                              ))}
-                            </ul>
-                          );
-                        }
-
-                        return null;
-                      })}
-                    </div>
-                  </div>
-                )}
-              </div>
-            );
-          })}
+              {/* Affordance */}
+              <span className="mt-4 text-xs font-lato text-black/50">
+                Learn more →
+              </span>
+            </button>
+          ))}
         </div>
 
         {/* Pagination */}
@@ -448,10 +488,10 @@ export default function FAQSection() {
                     setOpenIndex(null);
                   }}
                   className={`
-                    px-4 py-2 rounded-full text-sm font-lato transition
+                    h-[30px] aspect-square rounded-full text-sm font-lato transition
                     ${
                       isActive
-                        ? "bg-[#c7a486] text-white"
+                        ? "bg-brand text-white"
                         : "border border-black/20 text-black/70 hover:bg-black/5"
                     }
                   `}
@@ -460,6 +500,73 @@ export default function FAQSection() {
                 </button>
               );
             })}
+          </div>
+        )}
+
+        {activeFAQ && (
+          <div
+            ref={overlayRef}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 backdrop-blur-sm"
+            onClick={() => setActiveFAQ(null)}
+          >
+            <div
+              ref={modalRef}
+              onClick={(e) => e.stopPropagation()}
+              className="
+        bg-white
+        rounded-2xl
+        w-[90%]
+        max-w-2xl
+        max-h-[80vh]
+        overflow-y-auto
+        p-6 sm:p-8
+        relative
+      "
+            >
+              {/* Close Button */}
+              <button
+                onClick={() => setActiveFAQ(null)}
+                className="absolute top-4 right-4 text-black/60 hover:text-black"
+              >
+                ✕
+              </button>
+
+              {/* Question */}
+              <h3 className="font-lora text-xl sm:text-2xl text-black mb-4">
+                {activeFAQ.question}
+              </h3>
+
+              {/* Answer */}
+              <div className="flex flex-col gap-3">
+                {activeFAQ.answer.map((block, i) => {
+                  if (block.type === "paragraph") {
+                    return (
+                      <p
+                        key={i}
+                        className="font-lato text-sm sm:text-base text-black/75 leading-relaxed"
+                      >
+                        {block.text}
+                      </p>
+                    );
+                  }
+
+                  if (block.type === "list") {
+                    return (
+                      <ul
+                        key={i}
+                        className="list-disc pl-5 space-y-1 font-lato text-sm sm:text-base text-black/75"
+                      >
+                        {block.items.map((item, idx) => (
+                          <li key={idx}>{item}</li>
+                        ))}
+                      </ul>
+                    );
+                  }
+
+                  return null;
+                })}
+              </div>
+            </div>
           </div>
         )}
 

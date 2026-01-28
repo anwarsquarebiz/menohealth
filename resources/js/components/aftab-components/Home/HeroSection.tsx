@@ -92,7 +92,7 @@ export default function HeroSection() {
         {/* HERO IMAGE (starts visible) */}
         <div ref={heroImageRef} className="absolute inset-0 opacity-100">
           <img
-            src="/assets/home-hero-img.svg"
+            src="/assets/home-hero-img.jpg"
             alt=""
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -130,7 +130,7 @@ export default function HeroSection() {
 
             {/* <button
               ref={ctaRef}
-              className="self-start bg-[#c7a486] hover:bg-[#b89476] transition-colors px-6 py-3 rounded-full flex items-center gap-4"
+              className="self-start bg-brand hover:bg-[#b89476] transition-colors px-6 py-3 rounded-full flex items-center gap-4"
             >
               <span className="font-lato text-white text-xs uppercase tracking-wider">
                 Book Now

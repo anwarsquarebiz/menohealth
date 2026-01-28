@@ -75,8 +75,8 @@ export default function WhyWeExistSection() {
         {/* Heading */}
         <div className="why-exist-heading flex flex-col items-center gap-4 mb-12 text-center">
           <div className="flex flex-col items-center gap-4">
-            <Heart className="w-5 h-5 text-[#c7a486]" />
-            <p className="font-lato text-xs uppercase tracking-widest text-[#c7a486] opacity-75">
+            <Heart className="w-5 h-5 text-brand" />
+            <p className="font-lato text-xs uppercase tracking-widest text-brand opacity-75">
               Why We Exist
             </p>
           </div>
